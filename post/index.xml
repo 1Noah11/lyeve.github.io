@@ -7,14 +7,42 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>lyeve</copyright>
-        <lastBuildDate>Fri, 05 Dec 2025 22:28:17 +0800</lastBuildDate><atom:link href="https://1noah11.github.io/lyeve.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 14 Dec 2025 16:37:01 +0800</lastBuildDate><atom:link href="https://1noah11.github.io/lyeve.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Air</title>
+        <link>https://1noah11.github.io/lyeve.github.io/p/air/</link>
+        <pubDate>Sun, 14 Dec 2025 16:37:01 +0800</pubDate>
+        
+        <guid>https://1noah11.github.io/lyeve.github.io/p/air/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>New111</title>
+        <link>https://1noah11.github.io/lyeve.github.io/p/new111/</link>
+        <pubDate>Sun, 14 Dec 2025 16:14:08 +0800</pubDate>
+        
+        <guid>https://1noah11.github.io/lyeve.github.io/p/new111/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>MyFirstblog</title>
         <link>https://1noah11.github.io/lyeve.github.io/p/myfirstblog/</link>
         <pubDate>Fri, 05 Dec 2025 22:28:17 +0800</pubDate>
         
         <guid>https://1noah11.github.io/lyeve.github.io/p/myfirstblog/</guid>
         <description>&lt;h3 id=&#34;hello-md-web-lyeve&#34;&gt;hello MD-WEB LYEVE
-&lt;/h3&gt;</description>
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/myfirstblog/image1.png&#34;
+	width=&#34;1263&#34;
+	height=&#34;839&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/myfirstblog/image1_hu_83227b8c081dfbf2.png 480w, https://1noah11.github.io/lyeve.github.io/p/myfirstblog/image1_hu_7080a47457f656ec.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;150&#34;
+		data-flex-basis=&#34;361px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>Chinese Test</title>
