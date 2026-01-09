@@ -268,6 +268,11 @@
     <li><a href="#source">source</a></li>
     <li><a href="#本地管理员">本地管理员</a></li>
     <li><a href="#game1">game1</a></li>
+    <li><a href="#bp">bp</a></li>
+    <li><a href="#eval">eval</a></li>
+    <li><a href="#需要管理员">需要管理员</a></li>
+    <li><a href="#速度要快">速度要快</a></li>
+    <li><a href="#file_get_contents">file_get_contents</a></li>
   </ol>
 </nav>
         </div>
@@ -565,6 +570,361 @@ wget -r https://你的服务器网站地址/.git</p>
 	
 >成功拿到flag
 flag{42febc48bc0404dc97ad61dab97d7d6d}</p>
+<h2 id="bp">bp
+</h2><p>是一个登录界面，随便提交一个密码
+<img src="/lyeve.github.io/Pasted%20image%2020260105181230.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<p>然后跳转到check.php页面，查看源码
+<img src="/lyeve.github.io/Pasted%20image%2020260105181445.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<p>发现要到success.php页面然后参数code正确才可以
+然后code不等于bugku10000时才可以，应该是密码正确了，经过check.php验证，会自动生成正确的code
+所以直接拿字典爆破，
+<img src="/lyeve.github.io/Pasted%20image%2020260105181553.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+发现长度全都一样</p>
+<p><img src="/lyeve.github.io/Pasted%20image%2020260105182148.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<p>可以让 burp 筛选下字符里不包含 bugku10000
+<img src="/lyeve.github.io/Pasted%20image%2020260105183814.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<p><img src="/lyeve.github.io/Pasted%20image%2020260105184242.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+成功获取flag</p>
+<p><img src="/lyeve.github.io/Pasted%20image%2020260105184257.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<h2 id="eval">eval
+</h2><p>查看源码：
+<img src="/lyeve.github.io/Pasted%20image%2020260106144443.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<p>需要通过hello参数传递内容，输入?hello=$GLOBALS，看一下全局变量</p>
+<p><img src="/lyeve.github.io/Pasted%20image%2020260106145247.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+看到了flag变量，但值没有</p>
+<p>eval函数会执行字符串中的php代码,试一下
+<img src="/lyeve.github.io/Pasted%20image%2020260106145555.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+可以把传入的hello参数设置为一句话木马
+然后用蚁剑连接
+<img src="/lyeve.github.io/Pasted%20image%2020260106150728.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+连接成功后就可以看到flag.php文件，看到flag了
+，忘记截图了。。</p>
+<h2 id="需要管理员">需要管理员
+</h2><p>打开题目发现是404界面，源码也没有有用的信息
+扫描一下发现有个robots.txt
+robots.txt 文件作用是
+避免爬虫抓取不必要的内容（如重复页面、后台页面），节省服务器带宽和资源。<br>
+引导搜索引擎更高效地抓取网站的重要内容，有助于优化 SEO（搜索引擎优化排名）
+<img src="/lyeve.github.io/Pasted%20image%2020260106154338.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+查看后发现两行内容，第一行是解释对哪些类别的爬虫生效
+第二行是指定禁止爬虫抓取的路径。
+<img src="/lyeve.github.io/Pasted%20image%2020260106155427.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<p>我们查看一下resul1.php页面
+<img src="/lyeve.github.io/Pasted%20image%2020260106155702.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<p>说要管理员身份
+结合他给的x参数
+<img src="/lyeve.github.io/Pasted%20image%2020260106161137.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<h2 id="速度要快">速度要快
+</h2><p>查看源码，说是要post传递一个margin的参数</p>
+<p><img src="/lyeve.github.io/Pasted%20image%2020260109124057.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<p>然后继续找，看请求头，发现了疑似flag的值
+一看就是base64编码
+<img src="/lyeve.github.io/Pasted%20image%2020260109124215.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<p>解码后得到：      跑的还不错，给你flag吧: MTY4NTcz</p>
+<p>试了提交flag不对，结合刚开始发现的margin参数，应该是margin参数要等于MTY4NTcz
+因为要先请求获得flag字段，然后解码，在传递flag参数，这个题肯定要用脚本来做，
+然后试了一下发现还是不行</p>
+<p>后面觉得base64解码后的字符串没有什么用，不像是margin的值，然后尝试再次解码，发现解码后是一个数字了，这次估计就对了</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">import requests  
+</span></span><span class="line"><span class="cl">import base64  
+</span></span><span class="line"><span class="cl">import re  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">url = &#34;http://171.80.2.169:11642/&#34; 
+</span></span><span class="line"><span class="cl">def solve():  
+</span></span><span class="line"><span class="cl">    session = requests.Session()  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    try:  
+</span></span><span class="line"><span class="cl">        # 1. 获取响应头  
+</span></span><span class="line"><span class="cl">        response = session.get(url)  
+</span></span><span class="line"><span class="cl">        flag_encoded = response.headers.get(&#39;flag&#39;)  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        if not flag_encoded:  
+</span></span><span class="line"><span class="cl">            print(&#34;错误：响应头中未找到 &#39;flag&#39;&#34;)  
+</span></span><span class="line"><span class="cl">            return  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        print(f&#34;获取到的原始 Flag (Base64): {flag_encoded}&#34;)  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        # 2. 第一层解码并转为 UTF-8 字符串  
+</span></span><span class="line"><span class="cl">        # 结果类似于: &#34;跑得还不错，给你flag： NDc4MTQ1&#34;        
+</span></span><span class="line"><span class="cl">        first_decode_bytes = base64.b64decode(flag_encoded)  
+</span></span><span class="line"><span class="cl">        first_decode_text = first_decode_bytes.decode(&#39;utf-8&#39;)  
+</span></span><span class="line"><span class="cl">        print(f&#34;第一层解码结果: {first_decode_text}&#34;)  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        # 3. 提取真正的第二次 Base64 字符串  
+</span></span><span class="line"><span class="cl">        # 使用正则表达式匹配冒号后面的 Base64 字符，或者直接通过分割字符串  
+</span></span><span class="line"><span class="cl">        # 这里处理中文冒号 &#39;：&#39; 和英文冒号 &#39;:&#39;       
+</span></span><span class="line"><span class="cl">         if &#34;：&#34; in first_decode_text:  
+</span></span><span class="line"><span class="cl">            second_b64_part = first_decode_text.split(&#34;：&#34;)[-1].strip()  
+</span></span><span class="line"><span class="cl">        elif &#34;:&#34; in first_decode_text:  
+</span></span><span class="line"><span class="cl">            second_b64_part = first_decode_text.split(&#34;:&#34;)[-1].strip()  
+</span></span><span class="line"><span class="cl">        else:  
+</span></span><span class="line"><span class="cl">            # 如果没有冒号，尝试取最后一段空格后的内容  
+</span></span><span class="line"><span class="cl">            second_b64_part = first_decode_text.split()[-1].strip()  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        print(f&#34;提取出的待解码部分: {second_b64_part}&#34;)  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        # 4. 第二层解码  
+</span></span><span class="line"><span class="cl">        final_flag = base64.b64decode(second_b64_part).decode(&#39;utf-8&#39;)  
+</span></span><span class="line"><span class="cl">        print(f&#34;最终结果 (margin): {final_flag}&#34;)  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        # 5. POST 提交  
+</span></span><span class="line"><span class="cl">        data = {&#39;margin&#39;: final_flag}  
+</span></span><span class="line"><span class="cl">        post_response = session.post(url, data=data)  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">        print(&#34;--- 响应结果 ---&#34;)  
+</span></span><span class="line"><span class="cl">        print(post_response.text)  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    except Exception as e:  
+</span></span><span class="line"><span class="cl">        print(f&#34;运行过程中出现错误: {e}&#34;)  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">if __name__ == &#34;__main__&#34;:  
+</span></span><span class="line"><span class="cl">    solve()
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行后就得到了flag
+<img src="/lyeve.github.io/Pasted%20image%2020260109130344.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<h2 id="file_get_contents">file_get_contents
+</h2><p>打开题目</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">extract($_GET);  
+</span></span><span class="line"><span class="cl">if (!empty($ac))  
+</span></span><span class="line"><span class="cl">{  
+</span></span><span class="line"><span class="cl">$f = trim(file_get_contents($fn));  
+</span></span><span class="line"><span class="cl">if ($ac === $f)  
+</span></span><span class="line"><span class="cl">{  
+</span></span><span class="line"><span class="cl">echo &#34;&lt;p&gt;This is flag:&#34; .&#34; $flag&lt;/p&gt;&#34;;  
+</span></span><span class="line"><span class="cl">}  
+</span></span><span class="line"><span class="cl">else  
+</span></span><span class="line"><span class="cl">{  
+</span></span><span class="line"><span class="cl">echo &#34;&lt;p&gt;sorry!&lt;/p&gt;&#34;;  
+</span></span><span class="line"><span class="cl">}  
+</span></span><span class="line"><span class="cl">}  
+</span></span><span class="line"><span class="cl">?&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>extract();  这个函数会将 URL 参数（GET 请求）转化为变量名和变量值
+变量f是从fn文件中读取的内容，如果ac等于f，就输出flag
+下面关键就是区找flag文件了，用dirsearch扫发现了flag.txt
+<img src="/lyeve.github.io/Pasted%20image%2020260109132518.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+打开flag.txt文件，只有bugku字段，fn就是flag.txt，ac就是bugku。
+<img src="/lyeve.github.io/Pasted%20image%2020260109133236.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
 
 </section>
 
