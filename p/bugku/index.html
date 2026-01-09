@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="做了20题左右，仅记录了几道略难的题目。 source 查看源码，发现一个类似flag的内容，尝试了一下不对，\n用网页开发者工具查看cookie，也没有东西 尝试用目录扫描工具，dirsearch扫一下 发现有 .git 隐藏文件夹（它用来记录当前项目所有的版本历史，也能恢复代码到某次版本下） 那怎么把这个 .git 文件夹弄到本地来呢\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="12.29-1.4号 做了20题左右，仅记录了几道略难的题目。 source 查看源码，发现一个类似flag的内容，尝试了一下不对，\n用网页开发者工具查看cookie，也没有东西 尝试用目录扫描工具，dirsearch扫一下 发现有 .git 隐藏文件夹（它用来记录当前项目所有的版本历史，也能恢复代码到某次版本下）\n那怎么把这个 .git 文件夹弄到本地来呢\n">
 <title>Bugku</title>
 
 <link rel='canonical' href='https://1noah11.github.io/lyeve.github.io/p/bugku/'>
 
 <link rel="stylesheet" href="/lyeve.github.io/scss/style.min.b0e76e98cdd4f7082d1fc36f7af7e0843a81201db2197c03ca426751dc923735.css"><meta property='og:title' content="Bugku">
-<meta property='og:description' content="做了20题左右，仅记录了几道略难的题目。 source 查看源码，发现一个类似flag的内容，尝试了一下不对，\n用网页开发者工具查看cookie，也没有东西 尝试用目录扫描工具，dirsearch扫一下 发现有 .git 隐藏文件夹（它用来记录当前项目所有的版本历史，也能恢复代码到某次版本下） 那怎么把这个 .git 文件夹弄到本地来呢\n">
+<meta property='og:description' content="12.29-1.4号 做了20题左右，仅记录了几道略难的题目。 source 查看源码，发现一个类似flag的内容，尝试了一下不对，\n用网页开发者工具查看cookie，也没有东西 尝试用目录扫描工具，dirsearch扫一下 发现有 .git 隐藏文件夹（它用来记录当前项目所有的版本历史，也能恢复代码到某次版本下）\n那怎么把这个 .git 文件夹弄到本地来呢\n">
 <meta property='og:url' content='https://1noah11.github.io/lyeve.github.io/p/bugku/'>
 <meta property='og:site_name' content='MD-Web-lyeve'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2026-01-03T23:49:27&#43;08:00'/><meta property='article:modified_time' content='2026-01-03T23:49:27&#43;08:00'/>
 <meta name="twitter:title" content="Bugku">
-<meta name="twitter:description" content="做了20题左右，仅记录了几道略难的题目。 source 查看源码，发现一个类似flag的内容，尝试了一下不对，\n用网页开发者工具查看cookie，也没有东西 尝试用目录扫描工具，dirsearch扫一下 发现有 .git 隐藏文件夹（它用来记录当前项目所有的版本历史，也能恢复代码到某次版本下） 那怎么把这个 .git 文件夹弄到本地来呢\n">
+<meta name="twitter:description" content="12.29-1.4号 做了20题左右，仅记录了几道略难的题目。 source 查看源码，发现一个类似flag的内容，尝试了一下不对，\n用网页开发者工具查看cookie，也没有东西 尝试用目录扫描工具，dirsearch扫一下 发现有 .git 隐藏文件夹（它用来记录当前项目所有的版本历史，也能恢复代码到某次版本下）\n那怎么把这个 .git 文件夹弄到本地来呢\n">
     </head>
     <body class="
     article-page
@@ -268,6 +268,9 @@
     <li><a href="#source">source</a></li>
     <li><a href="#本地管理员">本地管理员</a></li>
     <li><a href="#game1">game1</a></li>
+  </ol>
+
+  <ol>
     <li><a href="#bp">bp</a></li>
     <li><a href="#eval">eval</a></li>
     <li><a href="#需要管理员">需要管理员</a></li>
@@ -330,7 +333,8 @@
     <section class="article-content">
     
     
-    <p>做了20题左右，仅记录了几道略难的题目。
+    <h1 id="1229-14号">12.29-1.4号
+</h1><p>做了20题左右，仅记录了几道略难的题目。
 <img src="/lyeve.github.io/p/bugku/img0.png"
 	width="496"
 	height="906"
@@ -371,8 +375,9 @@
 		data-flex-basis="267px"
 	
 >
-发现有 .git 隐藏文件夹（它用来记录当前项目所有的版本历史，也能恢复代码到某次版本下）   那怎么把这个 .git 文件夹弄到本地来呢</p>
-<p>使用kali自带的wget命令，
+发现有 .git 隐藏文件夹（它用来记录当前项目所有的版本历史，也能恢复代码到某次版本下）<br>
+那怎么把这个 .git 文件夹弄到本地来呢</p>
+<p>这里我使用kali自带的wget命令，
 wget -r https://你的服务器网站地址/.git</p>
 <p><img src="/lyeve.github.io/p/bugku/img3.png"
 	width="655"
@@ -487,8 +492,7 @@ wget -r https://你的服务器网站地址/.git</p>
 		data-flex-basis="589px"
 	
 >
-回显变了，说明ip是对的，要修改密码账号信息才可以
-，然后试了一下admin就成功了
+回显变了，说明ip是对的，要修改密码账号信息才可以，然后试了一下admin就成功了
 <img src="/lyeve.github.io/p/bugku/img12.png"
 	width="1673"
 	height="657"
@@ -502,9 +506,8 @@ wget -r https://你的服务器网站地址/.git</p>
 	
 ></p>
 <h2 id="game1">game1
-</h2><p>猜测玩游戏得到一定分数就可以获得flag，抓包然后修改score为10000，不行
-因为后面有个sign值，sign值的作用，进行签名，把数据做了加密后产生的，后台会把提交过去的数据做相同处理产生 sign 值和你发过去的 sign 值做判断，不一致则数据是被篡改了</p>
-<p><img src="/lyeve.github.io/p/bugku/img13.png"
+</h2><p>猜测玩游戏得到一定分数就可以获得flag，抓包然后修改score为10000，不行。因为后面有个sign值，sign值的作用，进行签名，把数据做了加密后产生的，后台会把提交过去的数据做相同处理产生 sign 值和你发过去的 sign 值做判断，不一致则数据是被篡改了
+<img src="/lyeve.github.io/p/bugku/img13.png"
 	width="1415"
 	height="563"
 	srcset="/lyeve.github.io/p/bugku/img13_hu_3a94b64e2b6d8582.png 480w, /lyeve.github.io/p/bugku/img13_hu_6f9107ba6badf8e6.png 1024w"
@@ -516,8 +519,7 @@ wget -r https://你的服务器网站地址/.git</p>
 		data-flex-basis="603px"
 	
 ></p>
-<p>查看源码，sign值是如何生成的
-发现是base64</p>
+<p>查看源码，找一下sign值是如何生成的   发现是base64</p>
 <p><img src="/lyeve.github.io/p/bugku/img14.png"
 	width="605"
 	height="171"
@@ -544,8 +546,8 @@ wget -r https://你的服务器网站地址/.git</p>
 ></p>
 <p>把生成的加密结果放入bp发现还是不行
 继续分析源码，发现有一个自定义的base.js，应该是自设的编码机制
-然后直接在浏览器控制台调用函数，解码后的内容复制到bp的sign</p>
-<p><img src="/lyeve.github.io/p/bugku/img16.png"
+然后直接在浏览器控制台调用函数，解码后的内容复制到bp的sign
+<img src="/lyeve.github.io/p/bugku/img16.png"
 	width="312"
 	height="134"
 	srcset="/lyeve.github.io/p/bugku/img16_hu_f7d674bbad79b6b7.png 480w, /lyeve.github.io/p/bugku/img16_hu_580073fea1be0f98.png 1024w"
@@ -570,108 +572,153 @@ wget -r https://你的服务器网站地址/.git</p>
 	
 >成功拿到flag
 flag{42febc48bc0404dc97ad61dab97d7d6d}</p>
-<h2 id="bp">bp
+<h1 id="15-19">1.5-1.9
+</h1><h2 id="bp">bp
 </h2><p>是一个登录界面，随便提交一个密码
-<img src="/lyeve.github.io/Pasted%20image%2020260105181230.png"
-	
-	
-	
+<img src="/lyeve.github.io/p/bugku/img18.png"
+	width="663"
+	height="318"
+	srcset="/lyeve.github.io/p/bugku/img18_hu_f966e50f072eb186.png 480w, /lyeve.github.io/p/bugku/img18_hu_3b9d591912883b0d.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="208"
+		data-flex-basis="500px"
 	
 ></p>
 <p>然后跳转到check.php页面，查看源码
-<img src="/lyeve.github.io/Pasted%20image%2020260105181445.png"
-	
-	
-	
+<img src="/lyeve.github.io/p/bugku/img19.png"
+	width="655"
+	height="574"
+	srcset="/lyeve.github.io/p/bugku/img19_hu_f301b0e5ce1e8452.png 480w, /lyeve.github.io/p/bugku/img19_hu_5564653b0fb525d3.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="114"
+		data-flex-basis="273px"
 	
 ></p>
 <p>发现要到success.php页面然后参数code正确才可以
 然后code不等于bugku10000时才可以，应该是密码正确了，经过check.php验证，会自动生成正确的code
 所以直接拿字典爆破，
-<img src="/lyeve.github.io/Pasted%20image%2020260105181553.png"
-	
-	
-	
+<img src="/lyeve.github.io/p/bugku/img20.png"
+	width="531"
+	height="155"
+	srcset="/lyeve.github.io/p/bugku/img20_hu_4a93908012822f9b.png 480w, /lyeve.github.io/p/bugku/img20_hu_90c8a2d7e93f9aa9.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="342"
+		data-flex-basis="822px"
 	
 >
-发现长度全都一样</p>
-<p><img src="/lyeve.github.io/Pasted%20image%2020260105182148.png"
-	
-	
-	
+发现长度全都一样
+<img src="/lyeve.github.io/p/bugku/img21.png"
+	width="723"
+	height="395"
+	srcset="/lyeve.github.io/p/bugku/img21_hu_e6f3d9bf42d6db83.png 480w, /lyeve.github.io/p/bugku/img21_hu_3c700ee4b228a3d5.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="183"
+		data-flex-basis="439px"
 	
 ></p>
 <p>可以让 burp 筛选下字符里不包含 bugku10000
-<img src="/lyeve.github.io/Pasted%20image%2020260105183814.png"
-	
-	
-	
+<img src="/lyeve.github.io/p/bugku/img22.png"
+	width="546"
+	height="428"
+	srcset="/lyeve.github.io/p/bugku/img22_hu_b5cc872100b4d3f4.png 480w, /lyeve.github.io/p/bugku/img22_hu_fc68bda3b5c67ad2.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="127"
+		data-flex-basis="306px"
 	
 ></p>
-<p><img src="/lyeve.github.io/Pasted%20image%2020260105184242.png"
-	
-	
-	
+<p><img src="/lyeve.github.io/p/bugku/img23.png"
+	width="1745"
+	height="784"
+	srcset="/lyeve.github.io/p/bugku/img23_hu_53384216af4aecbd.png 480w, /lyeve.github.io/p/bugku/img23_hu_4cc4c27fef3fd5b3.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="222"
+		data-flex-basis="534px"
 	
 >
 成功获取flag</p>
-<p><img src="/lyeve.github.io/Pasted%20image%2020260105184257.png"
-	
-	
-	
+<p><img src="/lyeve.github.io/p/bugku/img24.png"
+	width="1111"
+	height="577"
+	srcset="/lyeve.github.io/p/bugku/img24_hu_41dc7342692d1b41.png 480w, /lyeve.github.io/p/bugku/img24_hu_65d33af4710a6bfb.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="192"
+		data-flex-basis="462px"
 	
 ></p>
 <h2 id="eval">eval
 </h2><p>查看源码：
-<img src="/lyeve.github.io/Pasted%20image%2020260106144443.png"
-	
-	
-	
+<img src="/lyeve.github.io/p/bugku/img25.png"
+	width="417"
+	height="218"
+	srcset="/lyeve.github.io/p/bugku/img25_hu_566fcf45844a89b4.png 480w, /lyeve.github.io/p/bugku/img25_hu_ea1207596566965a.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="191"
+		data-flex-basis="459px"
 	
 ></p>
 <p>需要通过hello参数传递内容，输入?hello=$GLOBALS，看一下全局变量</p>
-<p><img src="/lyeve.github.io/Pasted%20image%2020260106145247.png"
-	
-	
-	
+<p><img src="/lyeve.github.io/p/bugku/img26.png"
+	width="1913"
+	height="289"
+	srcset="/lyeve.github.io/p/bugku/img26_hu_4dbdd2b34f528ee9.png 480w, /lyeve.github.io/p/bugku/img26_hu_7674b21769af0905.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="661"
+		data-flex-basis="1588px"
 	
 >
 看到了flag变量，但值没有</p>
 <p>eval函数会执行字符串中的php代码,试一下
-<img src="/lyeve.github.io/Pasted%20image%2020260106145555.png"
-	
-	
-	
+<img src="/lyeve.github.io/p/bugku/img27.png"
+	width="429"
+	height="199"
+	srcset="/lyeve.github.io/p/bugku/img27_hu_b398dfafcfabe48f.png 480w, /lyeve.github.io/p/bugku/img27_hu_b62ba8a188bab49a.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="215"
+		data-flex-basis="517px"
 	
 >
 可以把传入的hello参数设置为一句话木马
 然后用蚁剑连接
-<img src="/lyeve.github.io/Pasted%20image%2020260106150728.png"
-	
-	
-	
+<img src="/lyeve.github.io/p/bugku/img28.png"
+	width="523"
+	height="386"
+	srcset="/lyeve.github.io/p/bugku/img28_hu_83cc03bbef5bd7c7.png 480w, /lyeve.github.io/p/bugku/img28_hu_85937ca4250a6de9.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="135"
+		data-flex-basis="325px"
 	
 >
 连接成功后就可以看到flag.php文件，看到flag了
@@ -682,61 +729,85 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}</p>
 robots.txt 文件作用是
 避免爬虫抓取不必要的内容（如重复页面、后台页面），节省服务器带宽和资源。<br>
 引导搜索引擎更高效地抓取网站的重要内容，有助于优化 SEO（搜索引擎优化排名）
-<img src="/lyeve.github.io/Pasted%20image%2020260106154338.png"
-	
-	
-	
+<img src="/lyeve.github.io/p/bugku/img29.png"
+	width="892"
+	height="282"
+	srcset="/lyeve.github.io/p/bugku/img29_hu_f97b56449259bc98.png 480w, /lyeve.github.io/p/bugku/img29_hu_fe9c0708c08c09ad.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="316"
+		data-flex-basis="759px"
 	
 >
 查看后发现两行内容，第一行是解释对哪些类别的爬虫生效
 第二行是指定禁止爬虫抓取的路径。
-<img src="/lyeve.github.io/Pasted%20image%2020260106155427.png"
-	
-	
-	
+<img src="/lyeve.github.io/p/bugku/img30.png"
+	width="452"
+	height="95"
+	srcset="/lyeve.github.io/p/bugku/img30_hu_306854a6caec77c1.png 480w, /lyeve.github.io/p/bugku/img30_hu_2221c72d35bed2d9.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="475"
+		data-flex-basis="1141px"
 	
 ></p>
 <p>我们查看一下resul1.php页面
-<img src="/lyeve.github.io/Pasted%20image%2020260106155702.png"
-	
-	
-	
+<img src="/lyeve.github.io/p/bugku/img31.png"
+	width="1255"
+	height="545"
+	srcset="/lyeve.github.io/p/bugku/img31_hu_c738c2871d87b21b.png 480w, /lyeve.github.io/p/bugku/img31_hu_64a86c1f982e3379.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="230"
+		data-flex-basis="552px"
 	
 ></p>
 <p>说要管理员身份
 结合他给的x参数
-<img src="/lyeve.github.io/Pasted%20image%2020260106161137.png"
-	
-	
-	
+<img src="/lyeve.github.io/p/bugku/img32.png"
+	width="1073"
+	height="524"
+	srcset="/lyeve.github.io/p/bugku/img32_hu_ec980c360889baa1.png 480w, /lyeve.github.io/p/bugku/img32_hu_9d57f9036936a9b3.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="204"
+		data-flex-basis="491px"
 	
 ></p>
 <h2 id="速度要快">速度要快
 </h2><p>查看源码，说是要post传递一个margin的参数</p>
-<p><img src="/lyeve.github.io/Pasted%20image%2020260109124057.png"
-	
-	
-	
+<p><img src="/lyeve.github.io/p/bugku/img33.png"
+	width="769"
+	height="232"
+	srcset="/lyeve.github.io/p/bugku/img33_hu_84dfd8c0538beac8.png 480w, /lyeve.github.io/p/bugku/img33_hu_aba05395df89ae4.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="331"
+		data-flex-basis="795px"
 	
 ></p>
 <p>然后继续找，看请求头，发现了疑似flag的值
-一看就是base64编码
-<img src="/lyeve.github.io/Pasted%20image%2020260109124215.png"
-	
-	
-	
+结尾是双等号  一看就是base64编码
+<img src="/lyeve.github.io/p/bugku/img34.png"
+	width="1814"
+	height="656"
+	srcset="/lyeve.github.io/p/bugku/img34_hu_ad25a78671d72e95.png 480w, /lyeve.github.io/p/bugku/img34_hu_a90e38fd33f57df7.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="276"
+		data-flex-basis="663px"
 	
 ></p>
 <p>解码后得到：      跑的还不错，给你flag吧: MTY4NTcz</p>
@@ -861,12 +932,16 @@ robots.txt 文件作用是
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>运行后就得到了flag
-<img src="/lyeve.github.io/Pasted%20image%2020260109130344.png"
-	
-	
-	
+<img src="/lyeve.github.io/p/bugku/img35.png"
+	width="698"
+	height="203"
+	srcset="/lyeve.github.io/p/bugku/img35_hu_d13ebc662a376d6a.png 480w, /lyeve.github.io/p/bugku/img35_hu_bcd71d92c92d69ab.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="343"
+		data-flex-basis="825px"
 	
 ></p>
 <h2 id="file_get_contents">file_get_contents
@@ -908,21 +983,29 @@ robots.txt 文件作用是
 </div><p>extract();  这个函数会将 URL 参数（GET 请求）转化为变量名和变量值
 变量f是从fn文件中读取的内容，如果ac等于f，就输出flag
 下面关键就是区找flag文件了，用dirsearch扫发现了flag.txt
-<img src="/lyeve.github.io/Pasted%20image%2020260109132518.png"
-	
-	
-	
+<img src="/lyeve.github.io/p/bugku/img36.png"
+	width="461"
+	height="198"
+	srcset="/lyeve.github.io/p/bugku/img36_hu_abf4850ffa5ea986.png 480w, /lyeve.github.io/p/bugku/img36_hu_ed85f4a17a4df206.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="232"
+		data-flex-basis="558px"
 	
 >
 打开flag.txt文件，只有bugku字段，fn就是flag.txt，ac就是bugku。
-<img src="/lyeve.github.io/Pasted%20image%2020260109133236.png"
-	
-	
-	
+<img src="/lyeve.github.io/p/bugku/img37.png"
+	width="596"
+	height="384"
+	srcset="/lyeve.github.io/p/bugku/img37_hu_4ba301ff392509c8.png 480w, /lyeve.github.io/p/bugku/img37_hu_9919c957a512a36f.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="155"
+		data-flex-basis="372px"
 	
 ></p>
 

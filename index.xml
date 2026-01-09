@@ -13,7 +13,8 @@
         <pubDate>Sat, 03 Jan 2026 23:49:27 +0800</pubDate>
         
         <guid>https://1noah11.github.io/lyeve.github.io/p/bugku/</guid>
-        <description>&lt;p&gt;做了20题左右，仅记录了几道略难的题目。
+        <description>&lt;h1 id=&#34;1229-14号&#34;&gt;12.29-1.4号
+&lt;/h1&gt;&lt;p&gt;做了20题左右，仅记录了几道略难的题目。
 &lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img0.png&#34;
 	width=&#34;496&#34;
 	height=&#34;906&#34;
@@ -54,8 +55,9 @@
 		data-flex-basis=&#34;267px&#34;
 	
 &gt;
-发现有 .git 隐藏文件夹（它用来记录当前项目所有的版本历史，也能恢复代码到某次版本下）   那怎么把这个 .git 文件夹弄到本地来呢&lt;/p&gt;
-&lt;p&gt;使用kali自带的wget命令，
+发现有 .git 隐藏文件夹（它用来记录当前项目所有的版本历史，也能恢复代码到某次版本下）&lt;br&gt;
+那怎么把这个 .git 文件夹弄到本地来呢&lt;/p&gt;
+&lt;p&gt;这里我使用kali自带的wget命令，
 wget -r https://你的服务器网站地址/.git&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img3.png&#34;
 	width=&#34;655&#34;
@@ -170,8 +172,7 @@ wget -r https://你的服务器网站地址/.git&lt;/p&gt;
 		data-flex-basis=&#34;589px&#34;
 	
 &gt;
-回显变了，说明ip是对的，要修改密码账号信息才可以
-，然后试了一下admin就成功了
+回显变了，说明ip是对的，要修改密码账号信息才可以，然后试了一下admin就成功了
 &lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img12.png&#34;
 	width=&#34;1673&#34;
 	height=&#34;657&#34;
@@ -185,9 +186,8 @@ wget -r https://你的服务器网站地址/.git&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;game1&#34;&gt;game1
-&lt;/h2&gt;&lt;p&gt;猜测玩游戏得到一定分数就可以获得flag，抓包然后修改score为10000，不行
-因为后面有个sign值，sign值的作用，进行签名，把数据做了加密后产生的，后台会把提交过去的数据做相同处理产生 sign 值和你发过去的 sign 值做判断，不一致则数据是被篡改了&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img13.png&#34;
+&lt;/h2&gt;&lt;p&gt;猜测玩游戏得到一定分数就可以获得flag，抓包然后修改score为10000，不行。因为后面有个sign值，sign值的作用，进行签名，把数据做了加密后产生的，后台会把提交过去的数据做相同处理产生 sign 值和你发过去的 sign 值做判断，不一致则数据是被篡改了
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img13.png&#34;
 	width=&#34;1415&#34;
 	height=&#34;563&#34;
 	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img13_hu_3a94b64e2b6d8582.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img13_hu_6f9107ba6badf8e6.png 1024w&#34;
@@ -199,8 +199,7 @@ wget -r https://你的服务器网站地址/.git&lt;/p&gt;
 		data-flex-basis=&#34;603px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;查看源码，sign值是如何生成的
-发现是base64&lt;/p&gt;
+&lt;p&gt;查看源码，找一下sign值是如何生成的   发现是base64&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img14.png&#34;
 	width=&#34;605&#34;
 	height=&#34;171&#34;
@@ -227,8 +226,8 @@ wget -r https://你的服务器网站地址/.git&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;p&gt;把生成的加密结果放入bp发现还是不行
 继续分析源码，发现有一个自定义的base.js，应该是自设的编码机制
-然后直接在浏览器控制台调用函数，解码后的内容复制到bp的sign&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img16.png&#34;
+然后直接在浏览器控制台调用函数，解码后的内容复制到bp的sign
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img16.png&#34;
 	width=&#34;312&#34;
 	height=&#34;134&#34;
 	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img16_hu_f7d674bbad79b6b7.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img16_hu_580073fea1be0f98.png 1024w&#34;
@@ -253,108 +252,153 @@ wget -r https://你的服务器网站地址/.git&lt;/p&gt;
 	
 &gt;成功拿到flag
 flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
-&lt;h2 id=&#34;bp&#34;&gt;bp
+&lt;h1 id=&#34;15-19&#34;&gt;1.5-1.9
+&lt;/h1&gt;&lt;h2 id=&#34;bp&#34;&gt;bp
 &lt;/h2&gt;&lt;p&gt;是一个登录界面，随便提交一个密码
-&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/Pasted%20image%2020260105181230.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img18.png&#34;
+	width=&#34;663&#34;
+	height=&#34;318&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img18_hu_f966e50f072eb186.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img18_hu_3b9d591912883b0d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;208&#34;
+		data-flex-basis=&#34;500px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;然后跳转到check.php页面，查看源码
-&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/Pasted%20image%2020260105181445.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img19.png&#34;
+	width=&#34;655&#34;
+	height=&#34;574&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img19_hu_f301b0e5ce1e8452.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img19_hu_5564653b0fb525d3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;114&#34;
+		data-flex-basis=&#34;273px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;发现要到success.php页面然后参数code正确才可以
 然后code不等于bugku10000时才可以，应该是密码正确了，经过check.php验证，会自动生成正确的code
 所以直接拿字典爆破，
-&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/Pasted%20image%2020260105181553.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img20.png&#34;
+	width=&#34;531&#34;
+	height=&#34;155&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img20_hu_4a93908012822f9b.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img20_hu_90c8a2d7e93f9aa9.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;342&#34;
+		data-flex-basis=&#34;822px&#34;
 	
 &gt;
-发现长度全都一样&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/Pasted%20image%2020260105182148.png&#34;
-	
-	
-	
+发现长度全都一样
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img21.png&#34;
+	width=&#34;723&#34;
+	height=&#34;395&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img21_hu_e6f3d9bf42d6db83.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img21_hu_3c700ee4b228a3d5.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;183&#34;
+		data-flex-basis=&#34;439px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;可以让 burp 筛选下字符里不包含 bugku10000
-&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/Pasted%20image%2020260105183814.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img22.png&#34;
+	width=&#34;546&#34;
+	height=&#34;428&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img22_hu_b5cc872100b4d3f4.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img22_hu_fc68bda3b5c67ad2.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;127&#34;
+		data-flex-basis=&#34;306px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/Pasted%20image%2020260105184242.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img23.png&#34;
+	width=&#34;1745&#34;
+	height=&#34;784&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img23_hu_53384216af4aecbd.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img23_hu_4cc4c27fef3fd5b3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;222&#34;
+		data-flex-basis=&#34;534px&#34;
 	
 &gt;
 成功获取flag&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/Pasted%20image%2020260105184257.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img24.png&#34;
+	width=&#34;1111&#34;
+	height=&#34;577&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img24_hu_41dc7342692d1b41.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img24_hu_65d33af4710a6bfb.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;192&#34;
+		data-flex-basis=&#34;462px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;eval&#34;&gt;eval
 &lt;/h2&gt;&lt;p&gt;查看源码：
-&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/Pasted%20image%2020260106144443.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img25.png&#34;
+	width=&#34;417&#34;
+	height=&#34;218&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img25_hu_566fcf45844a89b4.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img25_hu_ea1207596566965a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;191&#34;
+		data-flex-basis=&#34;459px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;需要通过hello参数传递内容，输入?hello=$GLOBALS，看一下全局变量&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/Pasted%20image%2020260106145247.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img26.png&#34;
+	width=&#34;1913&#34;
+	height=&#34;289&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img26_hu_4dbdd2b34f528ee9.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img26_hu_7674b21769af0905.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;661&#34;
+		data-flex-basis=&#34;1588px&#34;
 	
 &gt;
 看到了flag变量，但值没有&lt;/p&gt;
 &lt;p&gt;eval函数会执行字符串中的php代码,试一下
-&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/Pasted%20image%2020260106145555.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img27.png&#34;
+	width=&#34;429&#34;
+	height=&#34;199&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img27_hu_b398dfafcfabe48f.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img27_hu_b62ba8a188bab49a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;215&#34;
+		data-flex-basis=&#34;517px&#34;
 	
 &gt;
 可以把传入的hello参数设置为一句话木马
 然后用蚁剑连接
-&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/Pasted%20image%2020260106150728.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img28.png&#34;
+	width=&#34;523&#34;
+	height=&#34;386&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img28_hu_83cc03bbef5bd7c7.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img28_hu_85937ca4250a6de9.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;135&#34;
+		data-flex-basis=&#34;325px&#34;
 	
 &gt;
 连接成功后就可以看到flag.php文件，看到flag了
@@ -365,61 +409,85 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}&lt;/p&gt;
 robots.txt 文件作用是
 避免爬虫抓取不必要的内容（如重复页面、后台页面），节省服务器带宽和资源。&lt;br&gt;
 引导搜索引擎更高效地抓取网站的重要内容，有助于优化 SEO（搜索引擎优化排名）
-&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/Pasted%20image%2020260106154338.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img29.png&#34;
+	width=&#34;892&#34;
+	height=&#34;282&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img29_hu_f97b56449259bc98.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img29_hu_fe9c0708c08c09ad.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;316&#34;
+		data-flex-basis=&#34;759px&#34;
 	
 &gt;
 查看后发现两行内容，第一行是解释对哪些类别的爬虫生效
 第二行是指定禁止爬虫抓取的路径。
-&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/Pasted%20image%2020260106155427.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img30.png&#34;
+	width=&#34;452&#34;
+	height=&#34;95&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img30_hu_306854a6caec77c1.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img30_hu_2221c72d35bed2d9.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;475&#34;
+		data-flex-basis=&#34;1141px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们查看一下resul1.php页面
-&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/Pasted%20image%2020260106155702.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img31.png&#34;
+	width=&#34;1255&#34;
+	height=&#34;545&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img31_hu_c738c2871d87b21b.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img31_hu_64a86c1f982e3379.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;230&#34;
+		data-flex-basis=&#34;552px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;说要管理员身份
 结合他给的x参数
-&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/Pasted%20image%2020260106161137.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img32.png&#34;
+	width=&#34;1073&#34;
+	height=&#34;524&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img32_hu_ec980c360889baa1.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img32_hu_9d57f9036936a9b3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;204&#34;
+		data-flex-basis=&#34;491px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;速度要快&#34;&gt;速度要快
 &lt;/h2&gt;&lt;p&gt;查看源码，说是要post传递一个margin的参数&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/Pasted%20image%2020260109124057.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img33.png&#34;
+	width=&#34;769&#34;
+	height=&#34;232&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img33_hu_84dfd8c0538beac8.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img33_hu_aba05395df89ae4.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;331&#34;
+		data-flex-basis=&#34;795px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;然后继续找，看请求头，发现了疑似flag的值
-一看就是base64编码
-&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/Pasted%20image%2020260109124215.png&#34;
-	
-	
-	
+结尾是双等号  一看就是base64编码
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img34.png&#34;
+	width=&#34;1814&#34;
+	height=&#34;656&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img34_hu_ad25a78671d72e95.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img34_hu_a90e38fd33f57df7.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;276&#34;
+		data-flex-basis=&#34;663px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;解码后得到：      跑的还不错，给你flag吧: MTY4NTcz&lt;/p&gt;
@@ -544,12 +612,16 @@ robots.txt 文件作用是
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;运行后就得到了flag
-&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/Pasted%20image%2020260109130344.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img35.png&#34;
+	width=&#34;698&#34;
+	height=&#34;203&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img35_hu_d13ebc662a376d6a.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img35_hu_bcd71d92c92d69ab.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;343&#34;
+		data-flex-basis=&#34;825px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;file_get_contents&#34;&gt;file_get_contents
@@ -591,21 +663,29 @@ robots.txt 文件作用是
 &lt;/div&gt;&lt;p&gt;extract();  这个函数会将 URL 参数（GET 请求）转化为变量名和变量值
 变量f是从fn文件中读取的内容，如果ac等于f，就输出flag
 下面关键就是区找flag文件了，用dirsearch扫发现了flag.txt
-&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/Pasted%20image%2020260109132518.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img36.png&#34;
+	width=&#34;461&#34;
+	height=&#34;198&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img36_hu_abf4850ffa5ea986.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img36_hu_ed85f4a17a4df206.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;232&#34;
+		data-flex-basis=&#34;558px&#34;
 	
 &gt;
 打开flag.txt文件，只有bugku字段，fn就是flag.txt，ac就是bugku。
-&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/Pasted%20image%2020260109133236.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img37.png&#34;
+	width=&#34;596&#34;
+	height=&#34;384&#34;
+	srcset=&#34;https://1noah11.github.io/lyeve.github.io/p/bugku/img37_hu_4ba301ff392509c8.png 480w, https://1noah11.github.io/lyeve.github.io/p/bugku/img37_hu_9919c957a512a36f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;155&#34;
+		data-flex-basis=&#34;372px&#34;
 	
 &gt;&lt;/p&gt;
 </description>
